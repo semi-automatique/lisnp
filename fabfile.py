@@ -29,27 +29,45 @@ logger = lisnpConfig.config_logging()
 os = lisnpConfig.config_os()
 fabric = lisnpConfig.config_fabric()
 from fabric.api import *
-class Tools:
+class Tools_windows:
+    @staticmethod
+    def install_on_windows():
+        try:
+            Tools_windows.install_cookiecutter()
+        except Exception, e:
+            logger.exception(e)
+class Tools_OSX:
     @staticmethod
     def install_cookiecutter():
         try:
             with lcd('.'):
                 #local("conda update requests")
-                local("conda install -c https://conda.binstar.org/pydanny cookiecutter")
-                # local("pip install cookiecutter")
+                    # local("conda info cookiecutter")
+                    # Was not build for Windows 7 win-32
+                    # local("conda install -c https://conda.binstar.org/pydanny cookiecutter")
+                local("pip install cookiecutter")
         except Exception, e:
             logger.exception(e)
     @staticmethod
-    def install_on_windows():
+    def install_fabric():
         try:
-            Tools.install_cookiecutter()
+            with lcd('.'):
+                local("pip install fabric")
+        except Exception, e:
+            logger.exception(e)
+    @staticmethod
+    def install_on_OSX():
+        try:
+            Tools_OSX.install_fabric()
+            Tools_OSX.install_cookiecutter()
         except Exception, e:
             logger.exception(e)
 class Make:
     @staticmethod
     def temporary_command():
         try:
-            Tools.install_on_windows()
+            Tools_OSX.install_on_OSX()
+            # Tools_windows.install_on_windows()
             # with lcd('.'):
                 # local("dir .")
         except Exception, e:
@@ -65,7 +83,9 @@ class Make:
 def mm4p():
     Make.mm4p()
 def install_on_windows():
-    Tools.install_on_windows()
+    Tools_windows.install_on_windows()
+def install_on_OSX():
+    Tools_OSX.install_on_OSX()
 def temporary_command():
     # fab temporary_command
     Make.temporary_command()
