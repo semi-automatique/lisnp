@@ -7834,7 +7834,8 @@
 <font NAME="Courier New"/>
 <node TEXT="with lcd(&apos;.&apos;):" ID="ID_1404881872" CREATED="1444936548058" MODIFIED="1444938415116">
 <font NAME="Courier New"/>
-<node TEXT="local(&quot;pip install cookiecutter&quot;)" ID="ID_799992768" CREATED="1444936548058" MODIFIED="1446414860380">
+<node TEXT="local(&quot;conda install -c https://conda.binstar.org/pydanny cookiecutter&quot;)" ID="ID_687975183" CREATED="1446416347634" MODIFIED="1446416366671"/>
+<node TEXT="# local(&quot;pip install cookiecutter&quot;)" ID="ID_799992768" CREATED="1444936548058" MODIFIED="1446416346471">
 <font NAME="Courier New"/>
 </node>
 </node>

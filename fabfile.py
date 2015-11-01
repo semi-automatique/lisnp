@@ -34,7 +34,8 @@ class Tools:
     def install_cookiecutter():
         try:
             with lcd('.'):
-                local("pip install cookiecutter")
+                local("conda install -c https://conda.binstar.org/pydanny cookiecutter")
+                # local("pip install cookiecutter")
         except Exception, e:
             logger.exception(e)
     @staticmethod
