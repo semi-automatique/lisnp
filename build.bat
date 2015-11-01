@@ -1,4 +1,4 @@
-: Génération des fichiers contenus dans ./mm4p/prog_mmg.mm.
+: The command to generated code from the content from ./mm4p/prog_mmg.mm.
     fab mm4p
-: Exemple d'appel Fabric avec un paramètre.
+: Fabric command example with a parameter.
     : fab hello:who=Fab

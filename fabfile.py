@@ -29,12 +29,27 @@ logger = lisnpConfig.config_logging()
 os = lisnpConfig.config_os()
 fabric = lisnpConfig.config_fabric()
 from fabric.api import *
-class Make:
+class Tools:
     @staticmethod
-    def commandes_temporaires():
+    def install_cookiecutter():
         try:
             with lcd('.'):
-                local("dir .")
+                local("pip install cookiecutter")
+        except Exception, e:
+            logger.exception(e)
+    @staticmethod
+    def install_on_windows():
+        try:
+            Tools.install_cookiecutter()
+        except Exception, e:
+            logger.exception(e)
+class Make:
+    @staticmethod
+    def temporary_command():
+        try:
+            Tools.install_on_windows()
+            # with lcd('.'):
+                # local("dir .")
         except Exception, e:
             logger.exception(e)
     @staticmethod
@@ -47,8 +62,10 @@ class Make:
             logger.exception(e)
 def mm4p():
     Make.mm4p()
+def install_on_windows():
+    Tools.install_on_windows()
+def temporary_command():
+    # fab temporary_command
+    Make.temporary_command()
 def hello(who="world"):
     print "Hello {who}!".format(who=who)
-# À faire
-    # [ ] Ajouter ce qu'il faut pour une configuration automatique d'un environnement avec Fabric.
-    
