@@ -7920,7 +7920,7 @@
 <node TEXT="@staticmethod" ID="ID_1047337442" CREATED="1444936548058" MODIFIED="1444946339730">
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node TEXT="def create(project_name, cookiecuter_remplate_url):" ID="ID_468134434" CREATED="1444936548058" MODIFIED="1446421975047">
+<node TEXT="def create(cookiecuter_template_url):" ID="ID_468134434" CREATED="1444936548058" MODIFIED="1446424559905">
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="try:" ID="ID_1683310694" CREATED="1444936548058" MODIFIED="1444938329482">
 <font NAME="Courier New"/>
@@ -7933,14 +7933,8 @@
 </node>
 <node TEXT="with lcd(&apos;./&apos; + variations_path):" ID="ID_178799090" CREATED="1444936548058" MODIFIED="1446422763942">
 <font NAME="Courier New"/>
-<node TEXT="local(&quot;mkdir &quot; + project_name)" ID="ID_957070644" CREATED="1444936548058" MODIFIED="1446422185727">
+<node TEXT="local(&quot;cookiecutter &quot; + cookiecuter_template_url)" ID="ID_289638556" CREATED="1444936548058" MODIFIED="1446423359327">
 <font NAME="Courier New"/>
-</node>
-<node TEXT="with lcd(&quot;./&quot; + project_name):" ID="ID_885380376" CREATED="1444936548058" MODIFIED="1446422336469">
-<font NAME="Courier New"/>
-<node TEXT="local(&quot;cookiecutter &quot; + cookiecuter_remplate_url)" ID="ID_289638556" CREATED="1444936548058" MODIFIED="1446421987828">
-<font NAME="Courier New"/>
-</node>
 </node>
 </node>
 </node>
@@ -7961,8 +7955,42 @@
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="try:" ID="ID_1662027114" CREATED="1444936548058" MODIFIED="1444938329482">
 <font NAME="Courier New"/>
-<node TEXT="Project_OSX.create(&quot;lisnp_click&quot; , &quot;https://github.com/nvie/cookiecutter-python-cli.git&quot;)" ID="ID_1544115358" CREATED="1446422030717" MODIFIED="1446422716249"/>
-<node TEXT="# Project_OSX.create(un, &quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446422650602"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_501855034" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1186489590" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<icon BUILTIN="list"/>
+<node TEXT="- https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/" ID="ID_1071853119" CREATED="1446424407557" MODIFIED="1446424424756" LINK="https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1088067448" CREATED="1446424296484" MODIFIED="1446424296484"/>
+<node TEXT="" ID="ID_381423876" CREATED="1446424440842" MODIFIED="1446424440842"/>
+</node>
+</node>
+<node TEXT="# lisnp_click template" ID="ID_1418011553" CREATED="1446424061221" MODIFIED="1446424087000" LINK="../cookiecutter_variations/lisnp_click/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1416371041" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1217410285" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<icon BUILTIN="list"/>
+<node TEXT="- http://click.pocoo.org/5/quickstart/" ID="ID_1809533650" CREATED="1446424276751" MODIFIED="1446424327242" LINK="http://click.pocoo.org/5/quickstart/"/>
+<node TEXT="- http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/" ID="ID_409665287" CREATED="1446424318163" MODIFIED="1446424324317" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1037201" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/nvie/cookiecutter-python-cli.git&quot;)" ID="ID_1544115358" CREATED="1446422030717" MODIFIED="1446424552783"/>
+<node TEXT="" ID="ID_292365210" CREATED="1446424074178" MODIFIED="1446424074178"/>
+<node TEXT="# lisnp_docopt template" ID="ID_1358650164" CREATED="1446424061221" MODIFIED="1446424521382" LINK="../cookiecutter_variations/lisnp_click/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_491184717" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_80275655" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<icon BUILTIN="list"/>
+<node TEXT="- http://docopt.org/" ID="ID_1773147794" CREATED="1446424481838" MODIFIED="1446425005114" LINK="http://docopt.org/"/>
+<node TEXT="- https://github.com/sloria/cookiecutter-docopt.git" ID="ID_484908691" CREATED="1446424992817" MODIFIED="1446425001941" LINK="https://github.com/sloria/cookiecutter-docopt.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_72634147" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="Project_OSX.create(&quot;cookiecutter https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446424737832"/>
+<node TEXT="" ID="ID_1411433932" CREATED="1446424592237" MODIFIED="1446424592237"/>
+<node TEXT="# Project_OSX.create(&quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446424591247"/>
+<node TEXT="" ID="ID_840980453" CREATED="1446424074178" MODIFIED="1446424074178"/>
 <node TEXT="# https://github.com/nvie/cookiecutter-python-cli.git" ID="ID_625634462" CREATED="1446422596021" MODIFIED="1446422610130"/>
 <node TEXT="# Tools_OSX.install_on_OSX()" ID="ID_1404756684" CREATED="1444933674903" MODIFIED="1446421663155">
 <font NAME="Courier New"/>

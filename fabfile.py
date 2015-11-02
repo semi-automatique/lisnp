@@ -64,7 +64,7 @@ class Tools_OSX:
             logger.exception(e)
 class Project_OSX:
     @staticmethod
-    def create(project_name, cookiecuter_template_url):
+    def create(cookiecuter_template_url):
         try:
             variations_path = "cookiecutter_variations"
             with lcd('.'):
@@ -77,8 +77,29 @@ class Make:
     @staticmethod
     def temporary_command():
         try:
-            Project_OSX.create("lisnp_click" , "https://github.com/nvie/cookiecutter-python-cli.git")
-            # Project_OSX.create(un, "cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git")
+            """
+                References:
+                    - https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/
+                    """
+                    
+            # lisnp_click template
+            """
+                References:
+                    - http://click.pocoo.org/5/quickstart/
+                    - http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/
+                    """
+            # Project_OSX.create("https://github.com/nvie/cookiecutter-python-cli.git")
+            
+            # lisnp_docopt template
+            """
+                References:
+                    - http://docopt.org/
+                    - https://github.com/sloria/cookiecutter-docopt.git
+                    """
+            Project_OSX.create("cookiecutter https://github.com/sloria/cookiecutter-docopt.git")
+            
+            # Project_OSX.create("cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git")
+            
             # https://github.com/nvie/cookiecutter-python-cli.git
             # Tools_OSX.install_on_OSX()
             # Tools_windows.install_on_windows()
