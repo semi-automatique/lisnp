@@ -62,11 +62,27 @@ class Tools_OSX:
             Tools_OSX.install_cookiecutter()
         except Exception, e:
             logger.exception(e)
+class Project_OSX:
+    @staticmethod
+    def create(project_name, cookiecuter_remplate_url):
+        try:
+            variations_path = "cookiecutter_variations"
+            with lcd('.'):
+                local("mkdir " + variations_path)
+            with lcd('./' + variations_path):
+                local("mkdir " + project_name)
+                with lcd("./" + project_name):
+                    local("cookiecutter " + cookiecuter_remplate_url)
+        except Exception, e:
+            logger.exception(e)
 class Make:
     @staticmethod
     def temporary_command():
         try:
-            Tools_OSX.install_on_OSX()
+            Project_OSX.create("lisnp_click" , "https://github.com/nvie/cookiecutter-python-cli.git")
+            # Project_OSX.create(un, "cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git")
+            # https://github.com/nvie/cookiecutter-python-cli.git
+            # Tools_OSX.install_on_OSX()
             # Tools_windows.install_on_windows()
             # with lcd('.'):
                 # local("dir .")

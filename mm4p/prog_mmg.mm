@@ -7915,6 +7915,43 @@
 </node>
 </node>
 </node>
+<node TEXT="class Project_OSX:" ID="ID_1667939869" CREATED="1444936548058" MODIFIED="1446421750191">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="@staticmethod" ID="ID_1047337442" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def create(project_name, cookiecuter_remplate_url):" ID="ID_468134434" CREATED="1444936548058" MODIFIED="1446421975047">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_1683310694" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="variations_path = &quot;cookiecutter_variations&quot;" ID="ID_904316839" CREATED="1446422200194" MODIFIED="1446422763937"/>
+<node TEXT="with lcd(&apos;.&apos;):" ID="ID_1377159933" CREATED="1444936548058" MODIFIED="1444938415116">
+<font NAME="Courier New"/>
+<node TEXT="local(&quot;mkdir &quot; + variations_path)" ID="ID_556255391" CREATED="1444936548058" MODIFIED="1446422763942">
+<font NAME="Courier New"/>
+</node>
+</node>
+<node TEXT="with lcd(&apos;./&apos; + variations_path):" ID="ID_178799090" CREATED="1444936548058" MODIFIED="1446422763942">
+<font NAME="Courier New"/>
+<node TEXT="local(&quot;mkdir &quot; + project_name)" ID="ID_957070644" CREATED="1444936548058" MODIFIED="1446422185727">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="with lcd(&quot;./&quot; + project_name):" ID="ID_885380376" CREATED="1444936548058" MODIFIED="1446422336469">
+<font NAME="Courier New"/>
+<node TEXT="local(&quot;cookiecutter &quot; + cookiecuter_remplate_url)" ID="ID_289638556" CREATED="1444936548058" MODIFIED="1446421987828">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_1580029968" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_1868383705" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="class Make:" ID="ID_1270555163" CREATED="1444936548058" MODIFIED="1444946339730">
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="@staticmethod" ID="ID_1482816325" CREATED="1444936548058" MODIFIED="1444946339730">
@@ -7924,7 +7961,10 @@
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="try:" ID="ID_1662027114" CREATED="1444936548058" MODIFIED="1444938329482">
 <font NAME="Courier New"/>
-<node TEXT="Tools_OSX.install_on_OSX()" ID="ID_1404756684" CREATED="1444933674903" MODIFIED="1446418743708">
+<node TEXT="Project_OSX.create(&quot;lisnp_click&quot; , &quot;https://github.com/nvie/cookiecutter-python-cli.git&quot;)" ID="ID_1544115358" CREATED="1446422030717" MODIFIED="1446422716249"/>
+<node TEXT="# Project_OSX.create(un, &quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446422650602"/>
+<node TEXT="# https://github.com/nvie/cookiecutter-python-cli.git" ID="ID_625634462" CREATED="1446422596021" MODIFIED="1446422610130"/>
+<node TEXT="# Tools_OSX.install_on_OSX()" ID="ID_1404756684" CREATED="1444933674903" MODIFIED="1446421663155">
 <font NAME="Courier New"/>
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1440989920" STARTINCLINATION="197;0;" ENDINCLINATION="199;-52;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
