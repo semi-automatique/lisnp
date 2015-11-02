@@ -64,15 +64,13 @@ class Tools_OSX:
             logger.exception(e)
 class Project_OSX:
     @staticmethod
-    def create(project_name, cookiecuter_remplate_url):
+    def create(project_name, cookiecuter_template_url):
         try:
             variations_path = "cookiecutter_variations"
             with lcd('.'):
                 local("mkdir " + variations_path)
             with lcd('./' + variations_path):
-                local("mkdir " + project_name)
-                with lcd("./" + project_name):
-                    local("cookiecutter " + cookiecuter_remplate_url)
+                local("cookiecutter " + cookiecuter_template_url)
         except Exception, e:
             logger.exception(e)
 class Make:
