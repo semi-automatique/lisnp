@@ -7967,7 +7967,7 @@
 <icon BUILTIN="folder"/>
 </node>
 <node TEXT="&quot;&quot;&quot;" ID="ID_1416371041" CREATED="1446424303493" MODIFIED="1446424303493">
-<node TEXT="References:" ID="ID_1217410285" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<node TEXT="References:" ID="ID_1217410285" CREATED="1446424207033" MODIFIED="1446426883206">
 <icon BUILTIN="list"/>
 <node TEXT="- http://click.pocoo.org/5/quickstart/" ID="ID_1809533650" CREATED="1446424276751" MODIFIED="1446424327242" LINK="http://click.pocoo.org/5/quickstart/"/>
 <node TEXT="- http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/" ID="ID_409665287" CREATED="1446424318163" MODIFIED="1446424324317" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/"/>
@@ -7976,19 +7976,31 @@
 </node>
 <node TEXT="# Project_OSX.create(&quot;https://github.com/nvie/cookiecutter-python-cli.git&quot;)" ID="ID_1544115358" CREATED="1446422030717" MODIFIED="1446424552783"/>
 <node TEXT="" ID="ID_292365210" CREATED="1446424074178" MODIFIED="1446424074178"/>
-<node TEXT="# lisnp_docopt template" ID="ID_1358650164" CREATED="1446424061221" MODIFIED="1446424521382" LINK="../cookiecutter_variations/lisnp_click/">
+<node TEXT="# lisnp_docopt template" ID="ID_1358650164" CREATED="1446424061221" MODIFIED="1446426872410" LINK="../cookiecutter_variations/lisnp_docopt/">
 <icon BUILTIN="folder"/>
 </node>
 <node TEXT="&quot;&quot;&quot;" ID="ID_491184717" CREATED="1446424303493" MODIFIED="1446424303493">
-<node TEXT="References:" ID="ID_80275655" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<node TEXT="References:" ID="ID_80275655" CREATED="1446424207033" MODIFIED="1446426878324">
 <icon BUILTIN="list"/>
 <node TEXT="- http://docopt.org/" ID="ID_1773147794" CREATED="1446424481838" MODIFIED="1446425005114" LINK="http://docopt.org/"/>
 <node TEXT="- https://github.com/sloria/cookiecutter-docopt.git" ID="ID_484908691" CREATED="1446424992817" MODIFIED="1446425001941" LINK="https://github.com/sloria/cookiecutter-docopt.git"/>
 <node TEXT="&quot;&quot;&quot;" ID="ID_72634147" CREATED="1446424296484" MODIFIED="1446424296484"/>
 </node>
 </node>
-<node TEXT="Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446425798259"/>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446426933537"/>
 <node TEXT="" ID="ID_1411433932" CREATED="1446424592237" MODIFIED="1446424592237"/>
+<node TEXT="# lisnp_Flask template" ID="ID_1577772270" CREATED="1446424061221" MODIFIED="1446426832885" LINK="../cookiecutter_variations/lisnp_click/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1707346523" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1713513069" CREATED="1446424207033" MODIFIED="1446426979498">
+<icon BUILTIN="list"/>
+<node TEXT="- https://github.com/sloria/cookiecutter-flask.git" ID="ID_1180470823" CREATED="1446426969818" MODIFIED="1446426974343" LINK="https://github.com/sloria/cookiecutter-flask.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_626886994" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-flask.git&quot;)" ID="ID_1731097199" CREATED="1446422030717" MODIFIED="1446426956925"/>
+<node TEXT="" ID="ID_1500469229" CREATED="1446426813940" MODIFIED="1446426813940"/>
 <node TEXT="# Project_OSX.create(&quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446424591247"/>
 <node TEXT="" ID="ID_840980453" CREATED="1446424074178" MODIFIED="1446424074178"/>
 <node TEXT="# https://github.com/nvie/cookiecutter-python-cli.git" ID="ID_625634462" CREATED="1446422596021" MODIFIED="1446422610130"/>
