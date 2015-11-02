@@ -7989,7 +7989,7 @@
 </node>
 <node TEXT="# Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446426933537"/>
 <node TEXT="" ID="ID_1411433932" CREATED="1446424592237" MODIFIED="1446424592237"/>
-<node TEXT="# lisnp_Flask template" ID="ID_1577772270" CREATED="1446424061221" MODIFIED="1446426832885" LINK="../cookiecutter_variations/lisnp_click/">
+<node TEXT="# lisnp_Flask template" ID="ID_1577772270" CREATED="1446424061221" MODIFIED="1446427487116" LINK="../cookiecutter_variations/lisnp_flask/">
 <icon BUILTIN="folder"/>
 </node>
 <node TEXT="&quot;&quot;&quot;" ID="ID_1707346523" CREATED="1446424303493" MODIFIED="1446424303493">
@@ -7999,9 +7999,19 @@
 <node TEXT="&quot;&quot;&quot;" ID="ID_626886994" CREATED="1446424296484" MODIFIED="1446424296484"/>
 </node>
 </node>
-<node TEXT="Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-flask.git&quot;)" ID="ID_1731097199" CREATED="1446422030717" MODIFIED="1446426956925"/>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-flask.git&quot;)" ID="ID_1731097199" CREATED="1446422030717" MODIFIED="1446427461923"/>
 <node TEXT="" ID="ID_1500469229" CREATED="1446426813940" MODIFIED="1446426813940"/>
-<node TEXT="# Project_OSX.create(&quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446424591247"/>
+<node TEXT="# lisnp_python_package" ID="ID_669799248" CREATED="1446424061221" MODIFIED="1446427704547">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_676838242" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1762631676" CREATED="1446424207033" MODIFIED="1446426979498">
+<icon BUILTIN="list"/>
+<node TEXT="- https://github.com/audreyr/cookiecutter-pypackage.git" ID="ID_1576723816" CREATED="1446427572218" MODIFIED="1446427578179" LINK="https://github.com/audreyr/cookiecutter-pypackage.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1645831555" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="Project_OSX.create(&quot;https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446427586561"/>
 <node TEXT="" ID="ID_840980453" CREATED="1446424074178" MODIFIED="1446424074178"/>
 <node TEXT="# https://github.com/nvie/cookiecutter-python-cli.git" ID="ID_625634462" CREATED="1446422596021" MODIFIED="1446422610130"/>
 <node TEXT="# Tools_OSX.install_on_OSX()" ID="ID_1404756684" CREATED="1444933674903" MODIFIED="1446421663155">

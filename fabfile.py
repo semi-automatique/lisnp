@@ -104,9 +104,14 @@ class Make:
                 References:
                     - https://github.com/sloria/cookiecutter-flask.git
                     """
-            Project_OSX.create("https://github.com/sloria/cookiecutter-flask.git")
+            # Project_OSX.create("https://github.com/sloria/cookiecutter-flask.git")
             
-            # Project_OSX.create("cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git")
+            # lisnp_python_package
+            """
+                References:
+                    - https://github.com/audreyr/cookiecutter-pypackage.git
+                    """
+            Project_OSX.create("https://github.com/audreyr/cookiecutter-pypackage.git")
             
             # https://github.com/nvie/cookiecutter-python-cli.git
             # Tools_OSX.install_on_OSX()
