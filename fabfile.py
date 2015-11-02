@@ -97,7 +97,7 @@ class Make:
                     - http://docopt.org/
                     - https://github.com/sloria/cookiecutter-docopt.git
                     """
-            Project_OSX.create("cookiecutter https://github.com/sloria/cookiecutter-docopt.git")
+            Project_OSX.create("https://github.com/sloria/cookiecutter-docopt.git")
             
             # Project_OSX.create("cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git")
             

@@ -7987,7 +7987,7 @@
 <node TEXT="&quot;&quot;&quot;" ID="ID_72634147" CREATED="1446424296484" MODIFIED="1446424296484"/>
 </node>
 </node>
-<node TEXT="Project_OSX.create(&quot;cookiecutter https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446424737832"/>
+<node TEXT="Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446425798259"/>
 <node TEXT="" ID="ID_1411433932" CREATED="1446424592237" MODIFIED="1446424592237"/>
 <node TEXT="# Project_OSX.create(&quot;cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446424591247"/>
 <node TEXT="" ID="ID_840980453" CREATED="1446424074178" MODIFIED="1446424074178"/>
