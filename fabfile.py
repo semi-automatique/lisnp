@@ -68,7 +68,8 @@ class Project_OSX:
         try:
             variations_path = "cookiecutter_variations"
             with lcd('.'):
-                local("mkdir " + variations_path)
+                if not os.path.isdir('./' + variations_path):
+                    os.makedirs('./' + variations_path)
             with lcd('./' + variations_path):
                 local("cookiecutter " + cookiecuter_template_url)
         except Exception, e:

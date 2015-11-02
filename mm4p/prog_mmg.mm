@@ -7927,8 +7927,8 @@
 <node TEXT="variations_path = &quot;cookiecutter_variations&quot;" ID="ID_904316839" CREATED="1446422200194" MODIFIED="1446422763937"/>
 <node TEXT="with lcd(&apos;.&apos;):" ID="ID_1377159933" CREATED="1444936548058" MODIFIED="1444938415116">
 <font NAME="Courier New"/>
-<node TEXT="local(&quot;mkdir &quot; + variations_path)" ID="ID_556255391" CREATED="1444936548058" MODIFIED="1446422763942">
-<font NAME="Courier New"/>
+<node TEXT="if not os.path.isdir(&apos;./&apos; + variations_path):" ID="ID_911810990" CREATED="1446425577374" MODIFIED="1446425589949">
+<node TEXT="os.makedirs(&apos;./&apos; + variations_path)" ID="ID_1841016464" CREATED="1446425577374" MODIFIED="1446425627974"/>
 </node>
 </node>
 <node TEXT="with lcd(&apos;./&apos; + variations_path):" ID="ID_178799090" CREATED="1444936548058" MODIFIED="1446422763942">
