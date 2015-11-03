@@ -64,6 +64,94 @@
 <icon BUILTIN="folder"/>
 <font SIZE="10" BOLD="false" ITALIC="false"/>
 <edge COLOR="#808080"/>
+<node TEXT="mmg write - setup.py" ID="ID_1992007006" CREATED="1446554081212" MODIFIED="1446558169098" LINK="../setup.py">
+<font BOLD="true"/>
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_1774701937" CREATED="1446554293447" MODIFIED="1446554293447"/>
+<node TEXT="import re" ID="ID_454661274" CREATED="1446554293447" MODIFIED="1446554293447"/>
+<node TEXT="import sys" ID="ID_1536157558" CREATED="1446554293448" MODIFIED="1446554293448"/>
+<node TEXT="from setuptools import setup" ID="ID_1498673539" CREATED="1446554293449" MODIFIED="1446554293449"/>
+<node TEXT="from setuptools.command.test import test as TestCommand" ID="ID_888940650" CREATED="1446554293449" MODIFIED="1446554293449"/>
+<node TEXT="REQUIRES = [" ID="ID_571844391" CREATED="1446554293450" MODIFIED="1446554293450">
+<node TEXT="&apos;docopt&apos;," ID="ID_788704881" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+<node TEXT="]" ID="ID_1514895247" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="class PyTest(TestCommand):" ID="ID_1537471405" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="def finalize_options(self):" ID="ID_1453574384" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="TestCommand.finalize_options(self)" ID="ID_875748214" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="self.test_args = []" ID="ID_1097244287" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="self.test_suite = True" ID="ID_1388597653" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+<node TEXT="def run_tests(self):" ID="ID_1959341697" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="import pytest" ID="ID_79548590" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="errcode = pytest.main(self.test_args)" ID="ID_914953403" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="sys.exit(errcode)" ID="ID_1036569143" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+</node>
+<node TEXT="def find_version(fname):" ID="ID_1777479414" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="&apos;&apos;&apos;Attempts to find the version number in the file names fname." ID="ID_304473197" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="Raises RuntimeError if not found." ID="ID_1002008847" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="&apos;&apos;&apos;" ID="ID_1046141393" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="version = &apos;&apos;" ID="ID_718034567" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="with open(fname, &apos;r&apos;) as fp:" ID="ID_1670136311" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="reg = re.compile(r&apos;__version__ = [\&apos;&quot;]([^\&apos;&quot;]*)[\&apos;&quot;]&apos;)" ID="ID_1678520643" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="for line in fp:" ID="ID_958837856" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="m = reg.match(line)" ID="ID_693819316" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="if m:" ID="ID_103925848" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="version = m.group(1)" ID="ID_1721200717" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="break" ID="ID_998810894" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+</node>
+</node>
+<node TEXT="if not version:" ID="ID_738377123" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="raise RuntimeError(&apos;Cannot find version information&apos;)" ID="ID_925177442" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+<node TEXT="return version" ID="ID_1472588359" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+<node TEXT="def read(fname):" ID="ID_1998986655" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="with open(fname) as fp:" ID="ID_592575378" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="content = fp.read()" ID="ID_498287613" CREATED="1446554293453" MODIFIED="1446554293453"/>
+</node>
+<node TEXT="return content" ID="ID_922276908" CREATED="1446554293453" MODIFIED="1446554293453"/>
+</node>
+<node TEXT="__version__ = find_version(&quot;lisnp.py&quot;)" ID="ID_1492440567" CREATED="1446554293452" MODIFIED="1446558026237"/>
+<node TEXT="setup(" ID="ID_144375114" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="name=&apos;lisnp&apos;," ID="ID_1475058541" CREATED="1446554293454" MODIFIED="1446558034998"/>
+<node TEXT="version=&quot;0.1.0&quot;," ID="ID_625574176" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="description=&apos;This language is not particular (lisnp) and it isn\&apos;t lisp.&apos;," ID="ID_1875027924" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="long_description=read(&quot;README.rst&quot;)," ID="ID_283052673" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="author=&apos;semi-automatique&apos;," ID="ID_529897814" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="author_email=&apos;semi-automatique@users.noreply.github.com&apos;," ID="ID_191373505" CREATED="1446554293454" MODIFIED="1446554293454" LINK="mailto:semi-automatique@users.noreply.github.com"/>
+<node TEXT="url=&apos;https://github.com/semi-automatique/lisnp_docopt&apos;," ID="ID_566787847" CREATED="1446554293454" MODIFIED="1446554293454" LINK="https://github.com/semi-automatique/lisnp_docopt&apos;,"/>
+<node TEXT="install_requires=REQUIRES," ID="ID_1546981140" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="license=read(&quot;LICENSE&quot;)," ID="ID_858995569" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="zip_safe=False," ID="ID_582915419" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="keywords=&apos;lisnp_docopt&apos;," ID="ID_40369257" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="classifiers=[" ID="ID_461885624" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&apos;Development Status :: 2 - Pre-Alpha&apos;," ID="ID_771842514" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Intended Audience :: Developers&apos;," ID="ID_1331646501" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;License :: OSI Approved :: MIT License&apos;," ID="ID_587715510" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Natural Language :: English&apos;," ID="ID_1382418592" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&quot;Programming Language :: Python :: 2&quot;," ID="ID_490283344" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 2.7&apos;," ID="ID_755159142" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 3&apos;," ID="ID_835520862" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 3.3&apos;," ID="ID_1596320434" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: Implementation :: CPython&apos;," ID="ID_1329754071" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: Implementation :: PyPy&apos;" ID="ID_133765277" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="]," ID="ID_1924232501" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="py_modules=[&quot;lisnp&quot;]," ID="ID_1974804789" CREATED="1446554293454" MODIFIED="1446558065035"/>
+<node TEXT="entry_points={" ID="ID_52289702" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&apos;console_scripts&apos;: [" ID="ID_997034385" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&quot;lisnp = lisnp:main&quot;" ID="ID_1465426071" CREATED="1446554293454" MODIFIED="1446558077703"/>
+</node>
+<node TEXT="]" ID="ID_1210445131" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="}," ID="ID_874583099" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="tests_require=[&apos;pytest&apos;]," ID="ID_1280178271" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="cmdclass={&apos;test&apos;: PyTest}" ID="ID_242820262" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT=")" ID="ID_1645450511" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
 <node TEXT="lisnp" ID="ID_433690858" CREATED="1446554578417" MODIFIED="1446556217484" LINK="../lisnp/">
 <icon BUILTIN="folder"/>
 <node TEXT="mmg write - lisnp.py" ID="ID_1403245297" CREATED="1446554081208" MODIFIED="1446556242572" LINK="../lisnp/lisnp.py">
@@ -7880,7 +7968,7 @@
 </node>
 </node>
 </node>
-<node TEXT="mmg write - fabfile.py" ID="ID_1790699168" CREATED="1444928563686" MODIFIED="1444946339727" LINK="../fabfile.py">
+<node TEXT="mmg write - fabfile.py" ID="ID_1790699168" CREATED="1444928563686" MODIFIED="1446558153664" LINK="../fabfile.py">
 <icon BUILTIN="edit"/>
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="# -*- coding: utf-8 -*-" ID="ID_403889911" CREATED="1444933945778" MODIFIED="1444946339728">
@@ -8533,7 +8621,8 @@
 <node TEXT="-------" ID="ID_975931388" CREATED="1446554229371" MODIFIED="1446554229371"/>
 <node TEXT="MIT licensed. See the bundled `LICENSE &lt;https://github.com/semi-automatique/lisnp_docopt/blob/master/LICENSE&gt;`_ file for more details." ID="ID_1511744579" CREATED="1446554229371" MODIFIED="1446554229371" LINK="https://github.com/semi-automatique/lisnp_docopt/blob/master/LICENSE"/>
 </node>
-<node TEXT="setup.py" ID="ID_1550085965" CREATED="1446554081212" MODIFIED="1446554081212" LINK="../cookiecutter_variations/lisnp_docopt/setup.py">
+<node TEXT="setup.py" ID="ID_1550085965" CREATED="1446554081212" MODIFIED="1446558123902" LINK="../cookiecutter_variations/lisnp_docopt/setup.py">
+<icon BUILTIN="messagebox_warning"/>
 <node TEXT="# -*- coding: utf-8 -*-" ID="ID_1129280347" CREATED="1446554293447" MODIFIED="1446554293447"/>
 <node TEXT="import re" ID="ID_550035912" CREATED="1446554293447" MODIFIED="1446554293447"/>
 <node TEXT="import sys" ID="ID_869277544" CREATED="1446554293448" MODIFIED="1446554293448"/>
@@ -8581,9 +8670,9 @@
 </node>
 <node TEXT="return content" ID="ID_153733986" CREATED="1446554293453" MODIFIED="1446554293453"/>
 </node>
-<node TEXT="__version__ = find_version(&quot;lisnp_docopt.py&quot;)" ID="ID_550855290" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="__version__ = find_version(&quot;lisnp.py&quot;)" ID="ID_550855290" CREATED="1446554293452" MODIFIED="1446558026237"/>
 <node TEXT="setup(" ID="ID_166799622" CREATED="1446554293453" MODIFIED="1446554293453">
-<node TEXT="name=&apos;lisnp_docopt&apos;," ID="ID_730780341" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="name=&apos;lisnp&apos;," ID="ID_730780341" CREATED="1446554293454" MODIFIED="1446558034998"/>
 <node TEXT="version=&quot;0.1.0&quot;," ID="ID_1721503024" CREATED="1446554293454" MODIFIED="1446554293454"/>
 <node TEXT="description=&apos;This language is not particular (lisnp) and it isn\&apos;t lisp.&apos;," ID="ID_1387258466" CREATED="1446554293454" MODIFIED="1446554293454"/>
 <node TEXT="long_description=read(&quot;README.rst&quot;)," ID="ID_68094066" CREATED="1446554293454" MODIFIED="1446554293454"/>
@@ -8607,10 +8696,10 @@
 <node TEXT="&apos;Programming Language :: Python :: Implementation :: PyPy&apos;" ID="ID_1867882699" CREATED="1446554293454" MODIFIED="1446554293454"/>
 </node>
 <node TEXT="]," ID="ID_137721372" CREATED="1446554293454" MODIFIED="1446554293454"/>
-<node TEXT="py_modules=[&quot;lisnp_docopt&quot;]," ID="ID_727931575" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="py_modules=[&quot;lisnp&quot;]," ID="ID_727931575" CREATED="1446554293454" MODIFIED="1446558065035"/>
 <node TEXT="entry_points={" ID="ID_1091399809" CREATED="1446554293454" MODIFIED="1446554293454">
 <node TEXT="&apos;console_scripts&apos;: [" ID="ID_901814649" CREATED="1446554293454" MODIFIED="1446554293454">
-<node TEXT="&quot;lisnp_docopt = lisnp_docopt:main&quot;" ID="ID_1571511306" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&quot;lisnp = lisnp:main&quot;" ID="ID_1571511306" CREATED="1446554293454" MODIFIED="1446558077703"/>
 </node>
 <node TEXT="]" ID="ID_1390763447" CREATED="1446554293454" MODIFIED="1446554293454"/>
 </node>
