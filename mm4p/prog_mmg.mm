@@ -51,7 +51,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
 <node TEXT="# Introduction" POSITION="right" ID="ID_396809871" CREATED="1444418048593" MODIFIED="1444928637339" COLOR="#000000" STYLE="fork">
 <font SIZE="10" BOLD="false" ITALIC="false"/>
 <edge COLOR="#808080"/>
@@ -79,8 +79,9 @@
 <icon BUILTIN="edit"/>
 </node>
 </node>
-<node TEXT="mmg write - lisnp-base-definition.md" ID="ID_1927231959" CREATED="1444928563686" MODIFIED="1446295079964" LINK="../lisnp-base-definition.md">
+<node TEXT="mmg write - lisnp-base-definition.md" ID="ID_1927231959" CREATED="1444928563686" MODIFIED="1446478004057" LINK="../lisnp-base-definition.md">
 <icon BUILTIN="edit"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1516510742" STARTINCLINATION="354;-16;" ENDINCLINATION="171;-155;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="# The lisnp base definition" ID="ID_586865077" CREATED="1446293457004" MODIFIED="1446295400153">
 <node TEXT="" ID="ID_581792915" CREATED="1446294333242" MODIFIED="1446294333242"/>
@@ -8260,6 +8261,17 @@
 </node>
 </node>
 <node TEXT="README.md" ID="ID_634394186" CREATED="1444928576860" MODIFIED="1444928576860" LINK="../README.md"/>
+</node>
+<node TEXT="Idea" POSITION="right" ID="ID_1649416054" CREATED="1446478010924" MODIFIED="1446478028388" COLOR="#000000" STYLE="fork">
+<edge COLOR="#808080"/>
+<font SIZE="10" BOLD="false" ITALIC="false"/>
+<node TEXT="https://pypi.python.org/pypi/python-creole/" ID="ID_262611047" CREATED="1446478018913" MODIFIED="1446478018913" LINK="https://pypi.python.org/pypi/python-creole/"/>
+<node TEXT="http://lepture.com/en/2014/markdown-parsers-in-python" ID="ID_276349121" CREATED="1446478064770" MODIFIED="1446478064770" LINK="http://lepture.com/en/2014/markdown-parsers-in-python"/>
+<node TEXT="http://bfeng.github.io/blog/2014/11/25/markdown-blogging-with-python-flask/" ID="ID_780264687" CREATED="1446478084656" MODIFIED="1446478084656" LINK="http://bfeng.github.io/blog/2014/11/25/markdown-blogging-with-python-flask/"/>
+<node TEXT="http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/" ID="ID_208132531" CREATED="1446478110917" MODIFIED="1446478110917" LINK="http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/"/>
+<node TEXT="https://github.com/dcolish/flask-markdown" ID="ID_1338787079" CREATED="1446478132608" MODIFIED="1446478132608" LINK="https://github.com/dcolish/flask-markdown"/>
+<node TEXT="https://pythonhosted.org/Flask-Markdown/" ID="ID_1969197566" CREATED="1446478166504" MODIFIED="1446478166504" LINK="https://pythonhosted.org/Flask-Markdown/"/>
+<node TEXT="http://flask.pocoo.org/snippets/19/" ID="ID_495013801" CREATED="1446478187924" MODIFIED="1446478187924" LINK="http://flask.pocoo.org/snippets/19/"/>
 </node>
 <node TEXT="Models" POSITION="right" ID="ID_806144647" CREATED="1446293442392" MODIFIED="1446293493001" COLOR="#000000" STYLE="fork">
 <edge COLOR="#808080"/>
