@@ -51,7 +51,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
 <node TEXT="# Introduction" POSITION="right" ID="ID_396809871" CREATED="1444418048593" MODIFIED="1444928637339" COLOR="#000000" STYLE="fork">
 <font SIZE="10" BOLD="false" ITALIC="false"/>
 <edge COLOR="#808080"/>
@@ -64,23 +64,122 @@
 <icon BUILTIN="folder"/>
 <font SIZE="10" BOLD="false" ITALIC="false"/>
 <edge COLOR="#808080"/>
-<node TEXT=".git" ID="ID_1802627625" CREATED="1444928576844" MODIFIED="1444928589261" LINK="../.git/">
+<node TEXT="lisnp" ID="ID_433690858" CREATED="1446554578417" MODIFIED="1446556217484" LINK="../lisnp/">
 <icon BUILTIN="folder"/>
+<node TEXT="mmg write - lisnp.py" ID="ID_1403245297" CREATED="1446554081208" MODIFIED="1446556242572" LINK="../lisnp/lisnp.py">
+<font BOLD="true"/>
+<node TEXT="#!/usr/bin/env python" ID="ID_1515545934" CREATED="1446554266213" MODIFIED="1446554266213"/>
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_1714014193" CREATED="1446554266213" MODIFIED="1446554266213"/>
+<node TEXT="&apos;&apos;&apos;lisnp" ID="ID_202887048" CREATED="1446554266216" MODIFIED="1446556279382"/>
+<node TEXT="Usage:" ID="ID_1063795682" CREATED="1446554266217" MODIFIED="1446554266217">
+<node TEXT="lisnp mm2yaml &lt;name&gt;..." ID="ID_880804099" CREATED="1446554266223" MODIFIED="1446556340564"/>
+<node TEXT="lisnp -h | --help" ID="ID_1432870299" CREATED="1446554266223" MODIFIED="1446556420196"/>
+<node TEXT="lisnp --version" ID="ID_351929660" CREATED="1446554266223" MODIFIED="1446556427561"/>
+</node>
+<node TEXT="Options:" ID="ID_718572200" CREATED="1446554266223" MODIFIED="1446554266223">
+<node TEXT="-h --help     Show this screen." ID="ID_1927823392" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="--version     Show version." ID="ID_1205457614" CREATED="1446554266224" MODIFIED="1446554266224"/>
+</node>
+<node TEXT="&apos;&apos;&apos;" ID="ID_103336186" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="from __future__ import unicode_literals, print_function" ID="ID_228105782" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="from docopt import docopt" ID="ID_817089377" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="__version__ = &quot;0.1.0&quot;" ID="ID_1585137295" CREATED="1446554266225" MODIFIED="1446554266225"/>
+<node TEXT="__author__ = &quot;semi-automatique&quot;" ID="ID_448913475" CREATED="1446554266226" MODIFIED="1446554266226"/>
+<node TEXT="__license__ = &quot;MIT&quot;" ID="ID_139266411" CREATED="1446554266226" MODIFIED="1446554266226"/>
+<node TEXT="def main():" ID="ID_1799732591" CREATED="1446554266227" MODIFIED="1446554266227">
+<node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_207723861" CREATED="1446554266227" MODIFIED="1446556479970"/>
+<node TEXT="args = docopt(__doc__, version=__version__)" ID="ID_1957027079" CREATED="1446554266227" MODIFIED="1446554266227"/>
+<node TEXT="print(args)" ID="ID_569332541" CREATED="1446554266227" MODIFIED="1446554266227"/>
+</node>
+<node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_1976520999" CREATED="1446554266227" MODIFIED="1446554266227">
+<node TEXT="main()" ID="ID_661287748" CREATED="1446554266228" MODIFIED="1446554266228"/>
+</node>
+</node>
 </node>
 <node TEXT="docs" ID="ID_1230690609" CREATED="1444928576844" MODIFIED="1444928589261" LINK="../docs/">
 <icon BUILTIN="folder"/>
+<node TEXT="mmg write - step-0000.mmd" ID="ID_1413858433" CREATED="1444928563686" MODIFIED="1446557640449" LINK="../docs/step-0000.mmd">
+<icon BUILTIN="edit"/>
+<font NAME="SansSerif" BOLD="true"/>
+<node TEXT="# STEP 0 -- Index of Small Task Enhancement Proposals (STEPs)" ID="ID_642852740" CREATED="1446293457004" MODIFIED="1446555284335">
+<node TEXT="" ID="ID_1574611741" CREATED="1446294333242" MODIFIED="1446294333242"/>
+</node>
+<node TEXT="## Introduction" ID="ID_517061885" CREATED="1446293457015" MODIFIED="1446555429369">
+<node TEXT="" ID="ID_1403248772" CREATED="1446555443646" MODIFIED="1446555443646"/>
+<node TEXT="This STEP contains the index of all Small Task Enhancement Proposals for this project," ID="ID_1105241710" CREATED="1446555435062" MODIFIED="1446555435062"/>
+<node TEXT="known as STEPs.  STEP numbers are assigned by the STEP editors, and" ID="ID_704912364" CREATED="1446555435062" MODIFIED="1446555435062"/>
+<node TEXT="once assigned are never changed.  The Git history of" ID="ID_1885771584" CREATED="1446555435062" MODIFIED="1446555450968"/>
+<node TEXT="the STEP texts represent their historical record." ID="ID_1839133337" CREATED="1446555435062" MODIFIED="1446555435062"/>
+<node TEXT="" ID="ID_594434515" CREATED="1446555453095" MODIFIED="1446555453095"/>
+</node>
+<node TEXT="## Informational STEPs" ID="ID_601017433" CREATED="1446555552124" MODIFIED="1446555874603">
+<node TEXT="" ID="ID_189721915" CREATED="1446555575825" MODIFIED="1446555575825"/>
+<node TEXT="[step-0001](./step-0001.mmd) -- Transform a mind map to a YAML file" ID="ID_81880005" CREATED="1446555786957" MODIFIED="1446557488842"/>
+<node TEXT="" ID="ID_1015336393" CREATED="1446555578525" MODIFIED="1446555578525"/>
+</node>
+<node TEXT="mmg write - mmg_stop.txt" ID="ID_1901481285" CREATED="1444928448483" MODIFIED="1444946339734" LINK="./mmg_stop.txt">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="Ce fichier marque la fin de la cr&#xe9;ation d&apos;un fichier par mm4p.py." ID="ID_1608488384" CREATED="1444928933442" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il est n&#xe9;cessaire pour chaque fichier &#xe0; g&#xe9;n&#xe9;rer &#xe0; l&#x2019;aide d&#x2019;un mindmap." ID="ID_1090698577" CREATED="1444929236011" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il permet de r&#xe9;cup&#xe9;rer les lignes qui suivent celles qui composent un fichier dans un mindmap." ID="ID_1040575892" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il ne sera plus n&#xe9;cessaire quand le script mm4p.py sera compl&#xe9;t&#xe9;." ID="ID_108276609" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+<node TEXT="mmg write - step-0001.mmd" ID="ID_1958890374" CREATED="1444928563686" MODIFIED="1446557647684" LINK="../docs/step-0001.mmd">
+<icon BUILTIN="edit"/>
+<font NAME="SansSerif" BOLD="true"/>
+<node TEXT="# STEP 0001 -- Transform a mind map to a YAML file" ID="ID_1377212232" CREATED="1446293457004" MODIFIED="1446557488854">
+<node TEXT="" ID="ID_1268499343" CREATED="1446294333242" MODIFIED="1446294333242"/>
+</node>
+<node TEXT="## Abstract" ID="ID_1253629689" CREATED="1446293457015" MODIFIED="1446555941359">
+<node TEXT="" ID="ID_834360180" CREATED="1446555443646" MODIFIED="1446555443646"/>
+<node TEXT="~~~" ID="ID_265208080" CREATED="1446294575619" MODIFIED="1446294584728">
+<node TEXT="# Transform a mind map to a YAML file" ID="ID_1539899151" CREATED="1446294598042" MODIFIED="1446557488855"/>
+<node TEXT="lisnp a_mind_map.mm mm2yaml a_mind_map.yaml" ID="ID_844009870" CREATED="1446294498986" MODIFIED="1446294574535"/>
+<node TEXT="~~~" ID="ID_1819012052" CREATED="1446294575619" MODIFIED="1446294584728"/>
+<node TEXT="" ID="ID_789295902" CREATED="1446295115978" MODIFIED="1446295115978"/>
+</node>
+<node TEXT="" ID="ID_894366928" CREATED="1446555453095" MODIFIED="1446555453095"/>
+</node>
+<node TEXT="" ID="ID_476612807" CREATED="1446557333984" MODIFIED="1446557333984"/>
+<node TEXT="## Informational PEPs" ID="ID_1662114379" CREATED="1446555552124" MODIFIED="1446555556478">
+<node TEXT="" ID="ID_107750588" CREATED="1446555575825" MODIFIED="1446555575825"/>
+<node TEXT="" ID="ID_1186765835" CREATED="1446555578525" MODIFIED="1446555578525"/>
+</node>
+<node TEXT="mmg write - mmg_stop.txt" ID="ID_1608220158" CREATED="1444928448483" MODIFIED="1444946339734" LINK="./mmg_stop.txt">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="Ce fichier marque la fin de la cr&#xe9;ation d&apos;un fichier par mm4p.py." ID="ID_1713758755" CREATED="1444928933442" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il est n&#xe9;cessaire pour chaque fichier &#xe0; g&#xe9;n&#xe9;rer &#xe0; l&#x2019;aide d&#x2019;un mindmap." ID="ID_448640248" CREATED="1444929236011" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il permet de r&#xe9;cup&#xe9;rer les lignes qui suivent celles qui composent un fichier dans un mindmap." ID="ID_1663970247" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il ne sera plus n&#xe9;cessaire quand le script mm4p.py sera compl&#xe9;t&#xe9;." ID="ID_365318212" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="mm4p" ID="ID_1983318984" CREATED="1444928576844" MODIFIED="1444941200493" LINK=".">
 <icon BUILTIN="folder"/>
-<node TEXT="mmg_stop.txt" ID="ID_279710136" CREATED="1444941209236" MODIFIED="1444941216022" LINK="mmg_stop.txt">
-<icon BUILTIN="edit"/>
-</node>
 <node TEXT="prog_mmg.mm" ID="ID_1438292847" CREATED="1444941209236" MODIFIED="1444941216022" LINK="prog_mmg.mm">
 <icon BUILTIN="edit"/>
 </node>
 </node>
-<node TEXT="mmg write - lisnp-base-definition.md" ID="ID_1927231959" CREATED="1444928563686" MODIFIED="1446295079964" LINK="../lisnp-base-definition.md">
+<node TEXT="mmg write - lisnp-base-definition.md" ID="ID_1927231959" CREATED="1444928563686" MODIFIED="1446478004057" LINK="../lisnp-base-definition.md">
 <icon BUILTIN="edit"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1516510742" STARTINCLINATION="354;-16;" ENDINCLINATION="171;-155;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="# The lisnp base definition" ID="ID_586865077" CREATED="1446293457004" MODIFIED="1446295400153">
 <node TEXT="" ID="ID_581792915" CREATED="1446294333242" MODIFIED="1446294333242"/>
@@ -95,7 +194,7 @@
 </node>
 <node TEXT="" ID="ID_914022236" CREATED="1446295100129" MODIFIED="1446295100129"/>
 <node TEXT="~~~" ID="ID_1682001926" CREATED="1446294575619" MODIFIED="1446294584728">
-<node TEXT="# Transform a mind map to yaml" ID="ID_293158475" CREATED="1446294598042" MODIFIED="1446294624645"/>
+<node TEXT="# Transform a mind map to a YAML file" ID="ID_293158475" CREATED="1446294598042" MODIFIED="1446557488855"/>
 <node TEXT="lisnp a_mind_map.mm mm2yaml a_mind_map.yaml" ID="ID_313812962" CREATED="1446294498986" MODIFIED="1446294574535"/>
 <node TEXT="~~~" ID="ID_1288311853" CREATED="1446294575619" MODIFIED="1446294584728"/>
 <node TEXT="" ID="ID_1439676735" CREATED="1446295115978" MODIFIED="1446295115978"/>
@@ -7823,18 +7922,208 @@
 <node TEXT="from fabric.api import *" ID="ID_526809371" CREATED="1444937832597" MODIFIED="1444946339730">
 <font NAME="SansSerif" SIZE="10"/>
 </node>
+<node TEXT="class Tools_windows:" ID="ID_1717249070" CREATED="1444936548058" MODIFIED="1446418069759">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="@staticmethod" ID="ID_1287077414" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def install_on_windows():" ID="ID_769592100" CREATED="1444936548058" MODIFIED="1446415080061">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_1401671110" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="Tools_windows.install_cookiecutter()" ID="ID_1753042353" CREATED="1446415099081" MODIFIED="1446418213294">
+<icon BUILTIN="button_cancel"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1709693244" STARTINCLINATION="241;0;" ENDINCLINATION="231;-76;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_1291407274" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_594844851" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="class Tools_OSX:" ID="ID_260302717" CREATED="1444936548058" MODIFIED="1446418084350">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="@staticmethod" ID="ID_304502626" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def install_cookiecutter():" ID="ID_1709693244" CREATED="1444936548058" MODIFIED="1446417962070">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_1146987891" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="with lcd(&apos;.&apos;):" ID="ID_1404881872" CREATED="1444936548058" MODIFIED="1444938415116">
+<font NAME="Courier New"/>
+<node TEXT="#local(&quot;conda update requests&quot;)" ID="ID_687975183" CREATED="1446416347634" MODIFIED="1446417981497">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="# local(&quot;conda info cookiecutter&quot;)" ID="ID_284286830" CREATED="1446416347634" MODIFIED="1446417973905"/>
+<node TEXT="# Was not build for Windows 7 win-32" ID="ID_944955323" CREATED="1446417781895" MODIFIED="1446417973905"/>
+<node TEXT="# local(&quot;conda install -c https://conda.binstar.org/pydanny cookiecutter&quot;)" ID="ID_1193564768" CREATED="1446416347634" MODIFIED="1446417973905"/>
+</node>
+<node TEXT="local(&quot;pip install cookiecutter&quot;)" ID="ID_799992768" CREATED="1444936548058" MODIFIED="1446417954263">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_1422686040" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_1743911762" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+<node TEXT="@staticmethod" ID="ID_523322214" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def install_fabric():" ID="ID_568957209" CREATED="1444936548058" MODIFIED="1446418501830">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_1011689730" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="with lcd(&apos;.&apos;):" ID="ID_1779440904" CREATED="1444936548058" MODIFIED="1444938415116">
+<font NAME="Courier New"/>
+<node TEXT="local(&quot;pip install fabric&quot;)" ID="ID_540012572" CREATED="1444936548058" MODIFIED="1446418528829">
+<font NAME="Courier New" BOLD="true"/>
+</node>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_1000327007" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_307536389" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+<node TEXT="@staticmethod" ID="ID_1406591556" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def install_on_OSX():" ID="ID_1440989920" CREATED="1444936548058" MODIFIED="1446417851979">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_920456871" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="Tools_OSX.install_fabric()" ID="ID_1304844300" CREATED="1446415099081" MODIFIED="1446418607725"/>
+<node TEXT="Tools_OSX.install_cookiecutter()" ID="ID_1047350078" CREATED="1446415099081" MODIFIED="1446418238690">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1709693244" STARTINCLINATION="241;0;" ENDINCLINATION="231;-76;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_551215822" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_1496020869" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="class Project_OSX:" ID="ID_1667939869" CREATED="1444936548058" MODIFIED="1446421750191">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="@staticmethod" ID="ID_1047337442" CREATED="1444936548058" MODIFIED="1444946339730">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node TEXT="def create(cookiecuter_template_url):" ID="ID_468134434" CREATED="1444936548058" MODIFIED="1446424559905">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="try:" ID="ID_1683310694" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="variations_path = &quot;cookiecutter_variations&quot;" ID="ID_904316839" CREATED="1446422200194" MODIFIED="1446422763937"/>
+<node TEXT="with lcd(&apos;.&apos;):" ID="ID_1377159933" CREATED="1444936548058" MODIFIED="1444938415116">
+<font NAME="Courier New"/>
+<node TEXT="if not os.path.isdir(&apos;./&apos; + variations_path):" ID="ID_911810990" CREATED="1446425577374" MODIFIED="1446425589949">
+<node TEXT="os.makedirs(&apos;./&apos; + variations_path)" ID="ID_1841016464" CREATED="1446425577374" MODIFIED="1446425627974"/>
+</node>
+</node>
+<node TEXT="with lcd(&apos;./&apos; + variations_path):" ID="ID_178799090" CREATED="1444936548058" MODIFIED="1446422763942">
+<font NAME="Courier New"/>
+<node TEXT="local(&quot;cookiecutter &quot; + cookiecuter_template_url)" ID="ID_289638556" CREATED="1444936548058" MODIFIED="1446423359327">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+<node TEXT="except Exception, e:" ID="ID_1580029968" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+<node TEXT="logger.exception(e)" ID="ID_1868383705" CREATED="1444936548058" MODIFIED="1444938329482">
+<font NAME="Courier New"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="class Make:" ID="ID_1270555163" CREATED="1444936548058" MODIFIED="1444946339730">
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="@staticmethod" ID="ID_1482816325" CREATED="1444936548058" MODIFIED="1444946339730">
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node TEXT="def commandes_temporaires():" ID="ID_1847474480" CREATED="1444936548058" MODIFIED="1444946339730">
+<node TEXT="def temporary_command():" ID="ID_1847474480" CREATED="1444936548058" MODIFIED="1446415000024">
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
 <node TEXT="try:" ID="ID_1662027114" CREATED="1444936548058" MODIFIED="1444938329482">
 <font NAME="Courier New"/>
-<node TEXT="with lcd(&apos;.&apos;):" ID="ID_181978655" CREATED="1444936548058" MODIFIED="1444938415116">
+<node TEXT="&quot;&quot;&quot;" ID="ID_501855034" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1186489590" CREATED="1446424207033" MODIFIED="1446424316751" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/">
+<icon BUILTIN="list"/>
+<node TEXT="- https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/" ID="ID_1071853119" CREATED="1446424407557" MODIFIED="1446424424756" LINK="https://realpython.com/blog/python/comparing-python-command-line-parsing-libraries-argparse-docopt-click/"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1088067448" CREATED="1446424296484" MODIFIED="1446424296484"/>
+<node TEXT="" ID="ID_381423876" CREATED="1446424440842" MODIFIED="1446424440842"/>
+</node>
+</node>
+<node TEXT="# lisnp_click template" ID="ID_1418011553" CREATED="1446424061221" MODIFIED="1446424087000" LINK="../cookiecutter_variations/lisnp_click/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1416371041" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1217410285" CREATED="1446424207033" MODIFIED="1446426883206">
+<icon BUILTIN="list"/>
+<node TEXT="- http://click.pocoo.org/5/quickstart/" ID="ID_1809533650" CREATED="1446424276751" MODIFIED="1446424327242" LINK="http://click.pocoo.org/5/quickstart/"/>
+<node TEXT="- http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/" ID="ID_409665287" CREATED="1446424318163" MODIFIED="1446424324317" LINK="http://nvie.com/posts/writing-a-cli-in-python-in-under-60-seconds/"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1037201" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/nvie/cookiecutter-python-cli.git&quot;)" ID="ID_1544115358" CREATED="1446422030717" MODIFIED="1446424552783"/>
+<node TEXT="" ID="ID_292365210" CREATED="1446424074178" MODIFIED="1446424074178"/>
+<node TEXT="# lisnp_docopt template" ID="ID_1358650164" CREATED="1446424061221" MODIFIED="1446426872410" LINK="../cookiecutter_variations/lisnp_docopt/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_491184717" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_80275655" CREATED="1446424207033" MODIFIED="1446426878324">
+<icon BUILTIN="list"/>
+<node TEXT="- http://docopt.org/" ID="ID_1773147794" CREATED="1446424481838" MODIFIED="1446425005114" LINK="http://docopt.org/"/>
+<node TEXT="- https://github.com/sloria/cookiecutter-docopt.git" ID="ID_484908691" CREATED="1446424992817" MODIFIED="1446425001941" LINK="https://github.com/sloria/cookiecutter-docopt.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_72634147" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-docopt.git&quot;)" ID="ID_120131916" CREATED="1446422030717" MODIFIED="1446426933537"/>
+<node TEXT="" ID="ID_1411433932" CREATED="1446424592237" MODIFIED="1446424592237"/>
+<node TEXT="# lisnp_Flask template" ID="ID_1577772270" CREATED="1446424061221" MODIFIED="1446427487116" LINK="../cookiecutter_variations/lisnp_flask/">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1707346523" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1713513069" CREATED="1446424207033" MODIFIED="1446426979498">
+<icon BUILTIN="list"/>
+<node TEXT="- https://github.com/sloria/cookiecutter-flask.git" ID="ID_1180470823" CREATED="1446426969818" MODIFIED="1446426974343" LINK="https://github.com/sloria/cookiecutter-flask.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_626886994" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="# Project_OSX.create(&quot;https://github.com/sloria/cookiecutter-flask.git&quot;)" ID="ID_1731097199" CREATED="1446422030717" MODIFIED="1446427461923"/>
+<node TEXT="" ID="ID_1500469229" CREATED="1446426813940" MODIFIED="1446426813940"/>
+<node TEXT="# lisnp_python_package" ID="ID_669799248" CREATED="1446424061221" MODIFIED="1446427704547">
+<icon BUILTIN="folder"/>
+</node>
+<node TEXT="&quot;&quot;&quot;" ID="ID_676838242" CREATED="1446424303493" MODIFIED="1446424303493">
+<node TEXT="References:" ID="ID_1762631676" CREATED="1446424207033" MODIFIED="1446426979498">
+<icon BUILTIN="list"/>
+<node TEXT="- https://github.com/audreyr/cookiecutter-pypackage.git" ID="ID_1576723816" CREATED="1446427572218" MODIFIED="1446427578179" LINK="https://github.com/audreyr/cookiecutter-pypackage.git"/>
+<node TEXT="&quot;&quot;&quot;" ID="ID_1645831555" CREATED="1446424296484" MODIFIED="1446424296484"/>
+</node>
+</node>
+<node TEXT="Project_OSX.create(&quot;https://github.com/audreyr/cookiecutter-pypackage.git&quot;)" ID="ID_635740344" CREATED="1446422030717" MODIFIED="1446427586561"/>
+<node TEXT="" ID="ID_840980453" CREATED="1446424074178" MODIFIED="1446424074178"/>
+<node TEXT="# https://github.com/nvie/cookiecutter-python-cli.git" ID="ID_625634462" CREATED="1446422596021" MODIFIED="1446422610130"/>
+<node TEXT="# Tools_OSX.install_on_OSX()" ID="ID_1404756684" CREATED="1444933674903" MODIFIED="1446421663155">
 <font NAME="Courier New"/>
-<node TEXT="local(&quot;dir .&quot;)" ID="ID_1859431610" CREATED="1444936548058" MODIFIED="1444946025392">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1440989920" STARTINCLINATION="197;0;" ENDINCLINATION="199;-52;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+<node TEXT="# Tools_windows.install_on_windows()" ID="ID_936394378" CREATED="1444933674903" MODIFIED="1446418456997">
+<font NAME="Courier New"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_769592100" STARTINCLINATION="225;0;" ENDINCLINATION="218;-33;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+<node TEXT="# with lcd(&apos;.&apos;):" ID="ID_181978655" CREATED="1444936548058" MODIFIED="1446415688975">
+<font NAME="Courier New"/>
+<node TEXT="# local(&quot;dir .&quot;)" ID="ID_1859431610" CREATED="1444936548058" MODIFIED="1446415692311">
 <font NAME="Courier New"/>
 </node>
 </node>
@@ -7873,24 +8162,40 @@
 </node>
 <node TEXT="def mm4p():" ID="ID_1078109654" CREATED="1444933674903" MODIFIED="1444946339732">
 <font NAME="SansSerif" SIZE="10" BOLD="true"/>
-<node TEXT="Make.mm4p()" ID="ID_1492881950" CREATED="1444933674903" MODIFIED="1444946207186">
+<node TEXT="Make.mm4p()" ID="ID_1492881950" CREATED="1444933674903" MODIFIED="1446415750983">
 <font NAME="Courier New"/>
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1612688581" STARTINCLINATION="60;0;" ENDINCLINATION="60;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1612688581" STARTINCLINATION="67;0;" ENDINCLINATION="62;-13;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
+<node TEXT="def install_on_windows():" ID="ID_1309118135" CREATED="1444933674903" MODIFIED="1446418758848">
+<icon BUILTIN="button_cancel"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false"/>
+<node TEXT="Tools_windows.install_on_windows()" ID="ID_1318502506" CREATED="1444933674903" MODIFIED="1446418069767">
+<font NAME="Courier New"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_769592100" STARTINCLINATION="225;0;" ENDINCLINATION="218;-33;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
+<node TEXT="def install_on_OSX():" ID="ID_1267459972" CREATED="1444933674903" MODIFIED="1446418756814">
+<font NAME="SansSerif" SIZE="10" BOLD="false"/>
+<node TEXT="Tools_OSX.install_on_OSX()" ID="ID_1241431811" CREATED="1444933674903" MODIFIED="1446418735654">
+<font NAME="Courier New"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1440989920" STARTINCLINATION="253;0;" ENDINCLINATION="130;-33;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+</node>
+<node TEXT="def temporary_command():" ID="ID_551112969" CREATED="1444936548058" MODIFIED="1446415000024">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="# fab temporary_command" ID="ID_515600990" CREATED="1444933792179" MODIFIED="1446415789984">
+<font NAME="SansSerif"/>
+</node>
+<node TEXT="Make.temporary_command()" ID="ID_896953051" CREATED="1444933674903" MODIFIED="1446415743976">
+<font NAME="Courier New"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1847474480" STARTINCLINATION="176;0;" ENDINCLINATION="165;-55;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
 </node>
 <node TEXT="def hello(who=&quot;world&quot;):" ID="ID_385453690" CREATED="1444933674903" MODIFIED="1444946339732">
 <font NAME="SansSerif" SIZE="10"/>
 <node TEXT="print &quot;Hello {who}!&quot;.format(who=who)" ID="ID_802190067" CREATED="1444933674903" MODIFIED="1444938329482">
 <font NAME="Courier New"/>
-</node>
-</node>
-<node TEXT="# &#xc0; faire" ID="ID_808954471" CREATED="1444931058174" MODIFIED="1444946339733">
-<font NAME="SansSerif" SIZE="10"/>
-<node TEXT="# [ ] Ajouter ce qu&apos;il faut pour une configuration automatique d&apos;un environnement avec Fabric." ID="ID_1485826051" CREATED="1444931274959" MODIFIED="1444946339733">
-<font NAME="SansSerif" SIZE="10"/>
-</node>
-<node TEXT="" ID="ID_1647758719" CREATED="1444932012764" MODIFIED="1444946339734">
-<font NAME="SansSerif" SIZE="10"/>
 </node>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1274696468" CREATED="1444928448483" MODIFIED="1444946339734" LINK="./mmg_stop.txt">
@@ -8025,17 +8330,22 @@
 <node TEXT="mmg write - build.bat" ID="ID_1455728293" CREATED="1444928563686" MODIFIED="1444946377392" LINK="../build.bat">
 <icon BUILTIN="edit"/>
 <font NAME="SansSerif" BOLD="true"/>
-<node TEXT=": G&#xe9;n&#xe9;ration des fichiers contenus dans ./mm4p/prog_mmg.mm." ID="ID_472428303" CREATED="1444937933783" MODIFIED="1444946377393">
+<node TEXT=": The command to generated code from the content from ./mm4p/prog_mmg.mm." ID="ID_472428303" CREATED="1444937933783" MODIFIED="1446415433445">
 <font NAME="SansSerif"/>
 <node TEXT="fab mm4p" ID="ID_202808029" CREATED="1444933792179" MODIFIED="1444946377393">
 <font NAME="SansSerif"/>
 </node>
-</node>
-<node TEXT=": Exemple d&apos;appel Fabric avec un param&#xe8;tre." ID="ID_1462352841" CREATED="1444937933783" MODIFIED="1444946377394">
+<node TEXT=": Fabric command example with a parameter." ID="ID_1462352841" CREATED="1444937933783" MODIFIED="1446415314727">
 <font NAME="SansSerif"/>
 <node TEXT=": fab hello:who=Fab" ID="ID_1959912061" CREATED="1444933792179" MODIFIED="1444946377394">
 <font NAME="SansSerif"/>
 </node>
+</node>
+<node TEXT="" ID="ID_526693564" CREATED="1446556803049" MODIFIED="1446556803049"/>
+</node>
+<node TEXT=": A minimal test for the generated code." ID="ID_656503690" CREATED="1446556805130" MODIFIED="1446556834908">
+<node TEXT=": python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1446556756320"/>
+<node TEXT="" ID="ID_1602043231" CREATED="1446556837564" MODIFIED="1446556837564"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
 <font NAME="SansSerif" BOLD="true"/>
@@ -8054,6 +8364,368 @@
 </node>
 </node>
 <node TEXT="README.md" ID="ID_634394186" CREATED="1444928576860" MODIFIED="1444928576860" LINK="../README.md"/>
+<node TEXT=".git" ID="ID_1802627625" CREATED="1444928576844" MODIFIED="1444928589261" LINK="../.git/">
+<icon BUILTIN="folder"/>
+</node>
+</node>
+<node TEXT="Idea" POSITION="right" ID="ID_1649416054" CREATED="1446478010924" MODIFIED="1446478028388" COLOR="#000000" STYLE="fork">
+<edge COLOR="#808080"/>
+<font SIZE="10" BOLD="false" ITALIC="false"/>
+<node TEXT="References" ID="ID_864368074" CREATED="1446554015563" MODIFIED="1446554020595">
+<node TEXT="https://pypi.python.org/pypi/python-creole/" ID="ID_262611047" CREATED="1446478018913" MODIFIED="1446478018913" LINK="https://pypi.python.org/pypi/python-creole/"/>
+<node TEXT="http://lepture.com/en/2014/markdown-parsers-in-python" ID="ID_276349121" CREATED="1446478064770" MODIFIED="1446478064770" LINK="http://lepture.com/en/2014/markdown-parsers-in-python"/>
+<node TEXT="http://bfeng.github.io/blog/2014/11/25/markdown-blogging-with-python-flask/" ID="ID_780264687" CREATED="1446478084656" MODIFIED="1446478084656" LINK="http://bfeng.github.io/blog/2014/11/25/markdown-blogging-with-python-flask/"/>
+<node TEXT="http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/" ID="ID_208132531" CREATED="1446478110917" MODIFIED="1446478110917" LINK="http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/"/>
+<node TEXT="https://github.com/dcolish/flask-markdown" ID="ID_1338787079" CREATED="1446478132608" MODIFIED="1446478132608" LINK="https://github.com/dcolish/flask-markdown"/>
+<node TEXT="https://pythonhosted.org/Flask-Markdown/" ID="ID_1969197566" CREATED="1446478166504" MODIFIED="1446478166504" LINK="https://pythonhosted.org/Flask-Markdown/"/>
+<node TEXT="http://flask.pocoo.org/snippets/19/" ID="ID_495013801" CREATED="1446478187924" MODIFIED="1446478187924" LINK="http://flask.pocoo.org/snippets/19/"/>
+</node>
+<node TEXT="Explore the features of Cookiecutter" ID="ID_454418612" CREATED="1446554039095" MODIFIED="1446556901079" LINK=".">
+<icon BUILTIN="folder"/>
+<node TEXT="cookiecutter_variations" ID="ID_1574514732" CREATED="1446554058879" MODIFIED="1446554058879" LINK="../cookiecutter_variations/">
+<node TEXT="lisnp_docopt" ID="ID_430758940" CREATED="1446554070712" MODIFIED="1446554070713" LINK="../cookiecutter_variations/lisnp_docopt/">
+<node TEXT=".gitignore" ID="ID_1791085566" CREATED="1446554081198" MODIFIED="1446554081203" LINK="../cookiecutter_variations/lisnp_docopt/.gitignore">
+<node TEXT="*.py[cod]" ID="ID_1725507439" CREATED="1446554118992" MODIFIED="1446554118992"/>
+<node TEXT="# C extensions" ID="ID_507228676" CREATED="1446554118992" MODIFIED="1446554118992"/>
+<node TEXT="*.so" ID="ID_937567076" CREATED="1446554118993" MODIFIED="1446554118993"/>
+<node TEXT="# Packages" ID="ID_773092704" CREATED="1446554118994" MODIFIED="1446554118994"/>
+<node TEXT="*.egg" ID="ID_1669282467" CREATED="1446554118994" MODIFIED="1446554118994"/>
+<node TEXT="*.egg-info" ID="ID_1099283129" CREATED="1446554118995" MODIFIED="1446554118995"/>
+<node TEXT="dist" ID="ID_1297188742" CREATED="1446554118996" MODIFIED="1446554118996"/>
+<node TEXT="build" ID="ID_1498739840" CREATED="1446554118997" MODIFIED="1446554118997"/>
+<node TEXT="eggs" ID="ID_1770972839" CREATED="1446554118997" MODIFIED="1446554118997"/>
+<node TEXT="parts" ID="ID_1957515670" CREATED="1446554118998" MODIFIED="1446554118998"/>
+<node TEXT="bin" ID="ID_822909619" CREATED="1446554118998" MODIFIED="1446554118998"/>
+<node TEXT="var" ID="ID_590134219" CREATED="1446554118999" MODIFIED="1446554118999"/>
+<node TEXT="sdist" ID="ID_70656614" CREATED="1446554119000" MODIFIED="1446554119000"/>
+<node TEXT="develop-eggs" ID="ID_796754474" CREATED="1446554119001" MODIFIED="1446554119001"/>
+<node TEXT=".installed.cfg" ID="ID_1686411855" CREATED="1446554119002" MODIFIED="1446554119002"/>
+<node TEXT="lib" ID="ID_1607623482" CREATED="1446554119003" MODIFIED="1446554119003"/>
+<node TEXT="lib64" ID="ID_1000926993" CREATED="1446554119004" MODIFIED="1446554119004"/>
+<node TEXT="# Installer logs" ID="ID_1076596065" CREATED="1446554119005" MODIFIED="1446554119005"/>
+<node TEXT="pip-log.txt" ID="ID_1289061458" CREATED="1446554119006" MODIFIED="1446554119006"/>
+<node TEXT="# Unit test / coverage reports" ID="ID_600155480" CREATED="1446554119007" MODIFIED="1446554119007"/>
+<node TEXT=".coverage" ID="ID_105477527" CREATED="1446554119008" MODIFIED="1446554119008"/>
+<node TEXT=".tox" ID="ID_102392997" CREATED="1446554119009" MODIFIED="1446554119009"/>
+<node TEXT="nosetests.xml" ID="ID_311125617" CREATED="1446554119010" MODIFIED="1446554119010"/>
+<node TEXT="# Translations" ID="ID_873444862" CREATED="1446554119011" MODIFIED="1446554119011"/>
+<node TEXT="*.mo" ID="ID_995349095" CREATED="1446554119011" MODIFIED="1446554119011"/>
+<node TEXT="# Mr Developer" ID="ID_1718210138" CREATED="1446554119013" MODIFIED="1446554119013"/>
+<node TEXT=".mr.developer.cfg" ID="ID_658576360" CREATED="1446554119014" MODIFIED="1446554119014"/>
+<node TEXT=".project" ID="ID_1808781218" CREATED="1446554119015" MODIFIED="1446554119015"/>
+<node TEXT=".pydevproject" ID="ID_353253354" CREATED="1446554119016" MODIFIED="1446554119016"/>
+<node TEXT="# Complexity" ID="ID_1799249728" CREATED="1446554119017" MODIFIED="1446554119017"/>
+<node TEXT="output/*.html" ID="ID_1402168388" CREATED="1446554119017" MODIFIED="1446554119017"/>
+<node TEXT="output/*/index.html" ID="ID_1937566044" CREATED="1446554119018" MODIFIED="1446554119018"/>
+<node TEXT="# Sphinx" ID="ID_1067223361" CREATED="1446554119019" MODIFIED="1446554119019"/>
+<node TEXT="docs/_build" ID="ID_960805534" CREATED="1446554119020" MODIFIED="1446554119020"/>
+<node TEXT="README.html" ID="ID_1908306218" CREATED="1446554119021" MODIFIED="1446554119021"/>
+</node>
+<node TEXT=".travis.yml" ID="ID_1853793096" CREATED="1446554081204" MODIFIED="1446554081205" LINK="../cookiecutter_variations/lisnp_docopt/.travis.yml">
+<node TEXT="# Config file for automatic testing at travis-ci.org" ID="ID_1652889376" CREATED="1446554162772" MODIFIED="1446554162772"/>
+<node TEXT="language: python" ID="ID_1333707463" CREATED="1446554162772" MODIFIED="1446554162772"/>
+<node TEXT="python:" ID="ID_599843649" CREATED="1446554162773" MODIFIED="1446554162773">
+<node TEXT="- &quot;3.3&quot;" ID="ID_1642744337" CREATED="1446554162774" MODIFIED="1446554162774"/>
+<node TEXT="- &quot;2.7&quot;" ID="ID_1078933571" CREATED="1446554162774" MODIFIED="1446554162774"/>
+<node TEXT="- &quot;pypy&quot;" ID="ID_1651886149" CREATED="1446554162774" MODIFIED="1446554162774"/>
+</node>
+<node TEXT="# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors" ID="ID_1544848167" CREATED="1446554162774" MODIFIED="1446554162774"/>
+<node TEXT="install: pip install -U ." ID="ID_724171449" CREATED="1446554162774" MODIFIED="1446554162774"/>
+<node TEXT="# command to run tests, e.g. python setup.py test" ID="ID_1304605526" CREATED="1446554162774" MODIFIED="1446554162774"/>
+<node TEXT="script: py.test" ID="ID_465350770" CREATED="1446554162775" MODIFIED="1446554162775"/>
+</node>
+<node TEXT="dev-requirements.txt" ID="ID_673724721" CREATED="1446554081205" MODIFIED="1446554081206" LINK="../cookiecutter_variations/lisnp_docopt/dev-requirements.txt">
+<node TEXT="pytest" ID="ID_375527803" CREATED="1446554246149" MODIFIED="1446554246149"/>
+<node TEXT="invoke" ID="ID_18566869" CREATED="1446554246149" MODIFIED="1446554246149"/>
+<node TEXT="tox" ID="ID_738639093" CREATED="1446554246150" MODIFIED="1446554246150"/>
+</node>
+<node TEXT="LICENSE" ID="ID_379580939" CREATED="1446554081207" MODIFIED="1446554081207" LINK="../cookiecutter_variations/lisnp_docopt/LICENSE">
+<node TEXT="Copyright 2015 semi-automatique" ID="ID_1390981168" CREATED="1446554180940" MODIFIED="1446554180940"/>
+<node TEXT="Permission is hereby granted, free of charge, to any person obtaining a copy" ID="ID_1770543797" CREATED="1446554180940" MODIFIED="1446554180940"/>
+<node TEXT="of this software and associated documentation files (the &quot;Software&quot;), to deal" ID="ID_1939686170" CREATED="1446554180941" MODIFIED="1446554180941"/>
+<node TEXT="in the Software without restriction, including without limitation the rights" ID="ID_1953441050" CREATED="1446554180942" MODIFIED="1446554180942"/>
+<node TEXT="to use, copy, modify, merge, publish, distribute, sublicense, and/or sell" ID="ID_629087243" CREATED="1446554180942" MODIFIED="1446554180942"/>
+<node TEXT="copies of the Software, and to permit persons to whom the Software is" ID="ID_1950599228" CREATED="1446554180943" MODIFIED="1446554180943"/>
+<node TEXT="furnished to do so, subject to the following conditions:" ID="ID_1347809258" CREATED="1446554180944" MODIFIED="1446554180944"/>
+<node TEXT="The above copyright notice and this permission notice shall be included in" ID="ID_542263115" CREATED="1446554180944" MODIFIED="1446554180944"/>
+<node TEXT="all copies or substantial portions of the Software." ID="ID_1107395097" CREATED="1446554180945" MODIFIED="1446554180945"/>
+<node TEXT="THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR" ID="ID_1420568538" CREATED="1446554180946" MODIFIED="1446554180946"/>
+<node TEXT="IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY," ID="ID_1610481453" CREATED="1446554180946" MODIFIED="1446554180946"/>
+<node TEXT="FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE" ID="ID_1024251049" CREATED="1446554180947" MODIFIED="1446554180947"/>
+<node TEXT="AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER" ID="ID_1950964413" CREATED="1446554180948" MODIFIED="1446554180948"/>
+<node TEXT="LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM," ID="ID_185246519" CREATED="1446554180949" MODIFIED="1446554180949"/>
+<node TEXT="OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN" ID="ID_127744775" CREATED="1446554180949" MODIFIED="1446554180949"/>
+<node TEXT="THE SOFTWARE." ID="ID_1116315117" CREATED="1446554180950" MODIFIED="1446554180950"/>
+</node>
+<node TEXT="lisnp_docopt.py" ID="ID_1952301246" CREATED="1446554081208" MODIFIED="1446554081208" LINK="../cookiecutter_variations/lisnp_docopt/lisnp_docopt.py">
+<node TEXT="#!/usr/bin/env python" ID="ID_1530443436" CREATED="1446554266213" MODIFIED="1446554266213"/>
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_913719053" CREATED="1446554266213" MODIFIED="1446554266213"/>
+<node TEXT="&apos;&apos;&apos;lisnp_docopt" ID="ID_1209194388" CREATED="1446554266216" MODIFIED="1446554266216"/>
+<node TEXT="Usage:" ID="ID_272911355" CREATED="1446554266217" MODIFIED="1446554266217">
+<node TEXT="lisnp_docopt ship new &lt;name&gt;..." ID="ID_1830892319" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt ship &lt;name&gt; move &lt;x&gt; &lt;y&gt; [--speed=&lt;kn&gt;]" ID="ID_327626687" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt ship shoot &lt;x&gt; &lt;y&gt;" ID="ID_125615307" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt mine (set|remove) &lt;x&gt; &lt;y&gt; [--moored|--drifting]" ID="ID_1813463665" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt -h | --help" ID="ID_686497831" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt --version" ID="ID_656118362" CREATED="1446554266223" MODIFIED="1446554266223"/>
+</node>
+<node TEXT="Options:" ID="ID_1282530972" CREATED="1446554266223" MODIFIED="1446554266223">
+<node TEXT="-h --help     Show this screen." ID="ID_1063162020" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="--version     Show version." ID="ID_1644006189" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="--speed=&lt;kn&gt;  Speed in knots [default: 10]." ID="ID_1526055830" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="--moored      Moored (anchored) mine." ID="ID_1709481474" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="--drifting    Drifting mine." ID="ID_1625177202" CREATED="1446554266224" MODIFIED="1446554266224"/>
+</node>
+<node TEXT="&apos;&apos;&apos;" ID="ID_1515832909" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="from __future__ import unicode_literals, print_function" ID="ID_1741786914" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="from docopt import docopt" ID="ID_202004248" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="__version__ = &quot;0.1.0&quot;" ID="ID_880328379" CREATED="1446554266225" MODIFIED="1446554266225"/>
+<node TEXT="__author__ = &quot;semi-automatique&quot;" ID="ID_1107113665" CREATED="1446554266226" MODIFIED="1446554266226"/>
+<node TEXT="__license__ = &quot;MIT&quot;" ID="ID_1282042986" CREATED="1446554266226" MODIFIED="1446554266226"/>
+<node TEXT="def main():" ID="ID_1179062224" CREATED="1446554266227" MODIFIED="1446554266227">
+<node TEXT="&apos;&apos;&apos;Main entry point for the lisnp_docopt CLI.&apos;&apos;&apos;" ID="ID_553683342" CREATED="1446554266227" MODIFIED="1446554266227"/>
+<node TEXT="args = docopt(__doc__, version=__version__)" ID="ID_1366527586" CREATED="1446554266227" MODIFIED="1446554266227"/>
+<node TEXT="print(args)" ID="ID_819050907" CREATED="1446554266227" MODIFIED="1446554266227"/>
+</node>
+<node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_313195701" CREATED="1446554266227" MODIFIED="1446554266227">
+<node TEXT="main()" ID="ID_816770400" CREATED="1446554266228" MODIFIED="1446554266228"/>
+</node>
+</node>
+<node TEXT="MANIFEST.in" ID="ID_1209774485" CREATED="1446554081208" MODIFIED="1446554081210" LINK="../cookiecutter_variations/lisnp_docopt/MANIFEST.in">
+<node TEXT="include *.rst LICENSE" ID="ID_775536204" CREATED="1446554206151" MODIFIED="1446554206151"/>
+</node>
+<node TEXT="README.rst" ID="ID_1888373896" CREATED="1446554081210" MODIFIED="1446554081211" LINK="../cookiecutter_variations/lisnp_docopt/README.rst">
+<node TEXT="===============================" ID="ID_1681699246" CREATED="1446554229351" MODIFIED="1446554229351"/>
+<node TEXT="lisnp_docopt" ID="ID_1020569852" CREATED="1446554229351" MODIFIED="1446554229351"/>
+<node TEXT="===============================" ID="ID_38279851" CREATED="1446554229352" MODIFIED="1446554229352"/>
+<node TEXT=".. image:: https://badge.fury.io/py/lisnp_docopt.png" ID="ID_799890504" CREATED="1446554229357" MODIFIED="1446554229357" LINK="https://badge.fury.io/py/lisnp_docopt.png">
+<node TEXT=":target: http://badge.fury.io/py/lisnp_docopt" ID="ID_436622789" CREATED="1446554229365" MODIFIED="1446554229365" LINK="http://badge.fury.io/py/lisnp_docopt"/>
+</node>
+<node TEXT=".. image:: https://travis-ci.org/semi-automatique/lisnp_docopt.png?branch=master" ID="ID_1920143810" CREATED="1446554229365" MODIFIED="1446554229365" LINK="https://travis-ci.org/semi-automatique/lisnp_docopt.png?branch=master">
+<node TEXT=":target: https://travis-ci.org/semi-automatique/lisnp_docopt" ID="ID_1869026804" CREATED="1446554229366" MODIFIED="1446554229366" LINK="https://travis-ci.org/semi-automatique/lisnp_docopt"/>
+</node>
+<node TEXT=".. image:: https://pypip.in/d/lisnp_docopt/badge.png" ID="ID_801339447" CREATED="1446554229366" MODIFIED="1446554229366" LINK="https://pypip.in/d/lisnp_docopt/badge.png">
+<node TEXT=":target: https://crate.io/packages/lisnp_docopt?version=latest" ID="ID_287933553" CREATED="1446554229366" MODIFIED="1446554229366" LINK="https://crate.io/packages/lisnp_docopt?version=latest"/>
+</node>
+<node TEXT="This language is not particular (lisnp) and it isn\&apos;t lisp." ID="ID_987136191" CREATED="1446554229366" MODIFIED="1446554229366"/>
+<node TEXT="Features" ID="ID_279223137" CREATED="1446554229367" MODIFIED="1446554229367"/>
+<node TEXT="--------" ID="ID_526317245" CREATED="1446554229367" MODIFIED="1446554229367"/>
+<node TEXT="* TODO" ID="ID_599064427" CREATED="1446554229368" MODIFIED="1446554229368"/>
+<node TEXT="Requirements" ID="ID_1855377587" CREATED="1446554229369" MODIFIED="1446554229369"/>
+<node TEXT="------------" ID="ID_1089540217" CREATED="1446554229369" MODIFIED="1446554229369"/>
+<node TEXT="- Python &gt;= 2.6 or &gt;= 3.3" ID="ID_1671612140" CREATED="1446554229370" MODIFIED="1446554229370"/>
+<node TEXT="License" ID="ID_71396754" CREATED="1446554229370" MODIFIED="1446554229370"/>
+<node TEXT="-------" ID="ID_975931388" CREATED="1446554229371" MODIFIED="1446554229371"/>
+<node TEXT="MIT licensed. See the bundled `LICENSE &lt;https://github.com/semi-automatique/lisnp_docopt/blob/master/LICENSE&gt;`_ file for more details." ID="ID_1511744579" CREATED="1446554229371" MODIFIED="1446554229371" LINK="https://github.com/semi-automatique/lisnp_docopt/blob/master/LICENSE"/>
+</node>
+<node TEXT="setup.py" ID="ID_1550085965" CREATED="1446554081212" MODIFIED="1446554081212" LINK="../cookiecutter_variations/lisnp_docopt/setup.py">
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_1129280347" CREATED="1446554293447" MODIFIED="1446554293447"/>
+<node TEXT="import re" ID="ID_550035912" CREATED="1446554293447" MODIFIED="1446554293447"/>
+<node TEXT="import sys" ID="ID_869277544" CREATED="1446554293448" MODIFIED="1446554293448"/>
+<node TEXT="from setuptools import setup" ID="ID_71033521" CREATED="1446554293449" MODIFIED="1446554293449"/>
+<node TEXT="from setuptools.command.test import test as TestCommand" ID="ID_48783942" CREATED="1446554293449" MODIFIED="1446554293449"/>
+<node TEXT="REQUIRES = [" ID="ID_830059881" CREATED="1446554293450" MODIFIED="1446554293450">
+<node TEXT="&apos;docopt&apos;," ID="ID_1343005739" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+<node TEXT="]" ID="ID_1014535337" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="class PyTest(TestCommand):" ID="ID_1775351251" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="def finalize_options(self):" ID="ID_918704233" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="TestCommand.finalize_options(self)" ID="ID_645482220" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="self.test_args = []" ID="ID_1332434608" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="self.test_suite = True" ID="ID_1759293039" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+<node TEXT="def run_tests(self):" ID="ID_835918089" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="import pytest" ID="ID_166365689" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="errcode = pytest.main(self.test_args)" ID="ID_1200255029" CREATED="1446554293451" MODIFIED="1446554293451"/>
+<node TEXT="sys.exit(errcode)" ID="ID_955552087" CREATED="1446554293451" MODIFIED="1446554293451"/>
+</node>
+</node>
+<node TEXT="def find_version(fname):" ID="ID_1194157366" CREATED="1446554293451" MODIFIED="1446554293451">
+<node TEXT="&apos;&apos;&apos;Attempts to find the version number in the file names fname." ID="ID_924639387" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="Raises RuntimeError if not found." ID="ID_444347699" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="&apos;&apos;&apos;" ID="ID_1730799486" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="version = &apos;&apos;" ID="ID_508670341" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="with open(fname, &apos;r&apos;) as fp:" ID="ID_111271445" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="reg = re.compile(r&apos;__version__ = [\&apos;&quot;]([^\&apos;&quot;]*)[\&apos;&quot;]&apos;)" ID="ID_999061212" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="for line in fp:" ID="ID_1380889007" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="m = reg.match(line)" ID="ID_1950142054" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="if m:" ID="ID_1198250545" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="version = m.group(1)" ID="ID_1858467902" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="break" ID="ID_1450477326" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+</node>
+</node>
+<node TEXT="if not version:" ID="ID_1547735710" CREATED="1446554293452" MODIFIED="1446554293452">
+<node TEXT="raise RuntimeError(&apos;Cannot find version information&apos;)" ID="ID_1835765824" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+<node TEXT="return version" ID="ID_32287577" CREATED="1446554293452" MODIFIED="1446554293452"/>
+</node>
+<node TEXT="def read(fname):" ID="ID_1337776177" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="with open(fname) as fp:" ID="ID_174586637" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="content = fp.read()" ID="ID_1080544624" CREATED="1446554293453" MODIFIED="1446554293453"/>
+</node>
+<node TEXT="return content" ID="ID_153733986" CREATED="1446554293453" MODIFIED="1446554293453"/>
+</node>
+<node TEXT="__version__ = find_version(&quot;lisnp_docopt.py&quot;)" ID="ID_550855290" CREATED="1446554293452" MODIFIED="1446554293452"/>
+<node TEXT="setup(" ID="ID_166799622" CREATED="1446554293453" MODIFIED="1446554293453">
+<node TEXT="name=&apos;lisnp_docopt&apos;," ID="ID_730780341" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="version=&quot;0.1.0&quot;," ID="ID_1721503024" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="description=&apos;This language is not particular (lisnp) and it isn\&apos;t lisp.&apos;," ID="ID_1387258466" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="long_description=read(&quot;README.rst&quot;)," ID="ID_68094066" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="author=&apos;semi-automatique&apos;," ID="ID_1997518542" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="author_email=&apos;semi-automatique@users.noreply.github.com&apos;," ID="ID_1267023419" CREATED="1446554293454" MODIFIED="1446554293454" LINK="mailto:semi-automatique@users.noreply.github.com"/>
+<node TEXT="url=&apos;https://github.com/semi-automatique/lisnp_docopt&apos;," ID="ID_590790833" CREATED="1446554293454" MODIFIED="1446554293454" LINK="https://github.com/semi-automatique/lisnp_docopt&apos;,"/>
+<node TEXT="install_requires=REQUIRES," ID="ID_1260323521" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="license=read(&quot;LICENSE&quot;)," ID="ID_1146697373" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="zip_safe=False," ID="ID_282099836" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="keywords=&apos;lisnp_docopt&apos;," ID="ID_548331916" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="classifiers=[" ID="ID_752173151" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&apos;Development Status :: 2 - Pre-Alpha&apos;," ID="ID_126968151" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Intended Audience :: Developers&apos;," ID="ID_574289351" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;License :: OSI Approved :: MIT License&apos;," ID="ID_1789987334" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Natural Language :: English&apos;," ID="ID_311209527" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&quot;Programming Language :: Python :: 2&quot;," ID="ID_1538691996" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 2.7&apos;," ID="ID_1780264574" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 3&apos;," ID="ID_376459073" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: 3.3&apos;," ID="ID_1780062601" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: Implementation :: CPython&apos;," ID="ID_1587446450" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="&apos;Programming Language :: Python :: Implementation :: PyPy&apos;" ID="ID_1867882699" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="]," ID="ID_137721372" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="py_modules=[&quot;lisnp_docopt&quot;]," ID="ID_727931575" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="entry_points={" ID="ID_1091399809" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&apos;console_scripts&apos;: [" ID="ID_901814649" CREATED="1446554293454" MODIFIED="1446554293454">
+<node TEXT="&quot;lisnp_docopt = lisnp_docopt:main&quot;" ID="ID_1571511306" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="]" ID="ID_1390763447" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="}," ID="ID_145629296" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="tests_require=[&apos;pytest&apos;]," ID="ID_197194985" CREATED="1446554293454" MODIFIED="1446554293454"/>
+<node TEXT="cmdclass={&apos;test&apos;: PyTest}" ID="ID_1102773260" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT=")" ID="ID_47114955" CREATED="1446554293454" MODIFIED="1446554293454"/>
+</node>
+<node TEXT="tasks.py" ID="ID_1061932942" CREATED="1446554081213" MODIFIED="1446554081213" LINK="../cookiecutter_variations/lisnp_docopt/tasks.py">
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_1122089602" CREATED="1446554308789" MODIFIED="1446554308789"/>
+<node TEXT="import os" ID="ID_1931507757" CREATED="1446554308789" MODIFIED="1446554308789"/>
+<node TEXT="import sys" ID="ID_1475887776" CREATED="1446554308790" MODIFIED="1446554308790"/>
+<node TEXT="from invoke import task, run" ID="ID_1200952472" CREATED="1446554308791" MODIFIED="1446554308791"/>
+<node TEXT="docs_dir = &apos;docs&apos;" ID="ID_1826316263" CREATED="1446554308792" MODIFIED="1446554308792"/>
+<node TEXT="build_dir = os.path.join(docs_dir, &apos;_build&apos;)" ID="ID_286517185" CREATED="1446554308792" MODIFIED="1446554308792"/>
+<node TEXT="@task" ID="ID_303081088" CREATED="1446554308793" MODIFIED="1446554308793"/>
+<node TEXT="def test():" ID="ID_1225587755" CREATED="1446554308793" MODIFIED="1446554308793">
+<node TEXT="run(&apos;python setup.py test&apos;, pty=True)" ID="ID_1343426455" CREATED="1446554308794" MODIFIED="1446554308794"/>
+</node>
+<node TEXT="@task" ID="ID_634851165" CREATED="1446554308794" MODIFIED="1446554308794"/>
+<node TEXT="def clean():" ID="ID_206117191" CREATED="1446554308795" MODIFIED="1446554308795">
+<node TEXT="run(&quot;rm -rf build&quot;)" ID="ID_1847736607" CREATED="1446554308795" MODIFIED="1446554308795"/>
+<node TEXT="run(&quot;rm -rf dist&quot;)" ID="ID_609530246" CREATED="1446554308795" MODIFIED="1446554308795"/>
+<node TEXT="run(&quot;rm -rf lisnp_docopt.egg-info&quot;)" ID="ID_525130682" CREATED="1446554308795" MODIFIED="1446554308795"/>
+<node TEXT="clean_docs()" ID="ID_374738913" CREATED="1446554308795" MODIFIED="1446554308795"/>
+<node TEXT="print(&quot;Cleaned up.&quot;)" ID="ID_1574095082" CREATED="1446554308795" MODIFIED="1446554308795"/>
+</node>
+<node TEXT="@task" ID="ID_701901511" CREATED="1446554308795" MODIFIED="1446554308795"/>
+<node TEXT="def clean_docs():" ID="ID_1920641461" CREATED="1446554308795" MODIFIED="1446554308795">
+<node TEXT="run(&quot;rm -rf %s&quot; % build_dir)" ID="ID_999959324" CREATED="1446554308796" MODIFIED="1446554308796"/>
+</node>
+<node TEXT="@task" ID="ID_1873182267" CREATED="1446554308796" MODIFIED="1446554308796"/>
+<node TEXT="def browse_docs():" ID="ID_1884364317" CREATED="1446554308797" MODIFIED="1446554308797">
+<node TEXT="run(&quot;open %s&quot; % os.path.join(build_dir, &apos;index.html&apos;))" ID="ID_776109622" CREATED="1446554308798" MODIFIED="1446554308798"/>
+</node>
+<node TEXT="@task" ID="ID_973063988" CREATED="1446554308798" MODIFIED="1446554308798"/>
+<node TEXT="def build_docs(clean=False, browse=False):" ID="ID_449381988" CREATED="1446554308798" MODIFIED="1446554308798">
+<node TEXT="if clean:" ID="ID_1808691225" CREATED="1446554308799" MODIFIED="1446554308799">
+<node TEXT="clean_docs()" ID="ID_1299293931" CREATED="1446554308799" MODIFIED="1446554308799"/>
+</node>
+<node TEXT="run(&quot;sphinx-build %s %s&quot; % (docs_dir, build_dir), pty=True)" ID="ID_89101855" CREATED="1446554308799" MODIFIED="1446554308799"/>
+<node TEXT="if browse:" ID="ID_1200699991" CREATED="1446554308799" MODIFIED="1446554308799">
+<node TEXT="browse_docs()" ID="ID_203075641" CREATED="1446554308799" MODIFIED="1446554308799"/>
+</node>
+</node>
+<node TEXT="@task" ID="ID_928439240" CREATED="1446554308799" MODIFIED="1446554308799"/>
+<node TEXT="def readme(browse=False):" ID="ID_934914382" CREATED="1446554308800" MODIFIED="1446554308800">
+<node TEXT="run(&apos;rst2html.py README.rst &gt; README.html&apos;)" ID="ID_1718128592" CREATED="1446554308801" MODIFIED="1446554308801"/>
+</node>
+<node TEXT="@task" ID="ID_444413463" CREATED="1446554308801" MODIFIED="1446554308801"/>
+<node TEXT="def publish(test=False):" ID="ID_980119560" CREATED="1446554308801" MODIFIED="1446554308801">
+<node TEXT="&quot;&quot;&quot;Publish to the cheeseshop.&quot;&quot;&quot;" ID="ID_285526386" CREATED="1446554308801" MODIFIED="1446554308801"/>
+<node TEXT="if test:" ID="ID_217001056" CREATED="1446554308801" MODIFIED="1446554308801">
+<node TEXT="run(&apos;python setup.py register -r test sdist upload -r test&apos;)" ID="ID_580058793" CREATED="1446554308801" MODIFIED="1446554308801"/>
+</node>
+<node TEXT="else:" ID="ID_1050754401" CREATED="1446554308801" MODIFIED="1446554308801">
+<node TEXT="run(&quot;python setup.py register sdist upload&quot;)" ID="ID_810157783" CREATED="1446554308801" MODIFIED="1446554308801"/>
+</node>
+</node>
+</node>
+<node TEXT="test_lisnp_docopt.py" ID="ID_1148773524" CREATED="1446554081214" MODIFIED="1446554081214" LINK="../cookiecutter_variations/lisnp_docopt/test_lisnp_docopt.py">
+<node TEXT="# -*- coding: utf-8 -*-" ID="ID_763443137" CREATED="1446554325610" MODIFIED="1446554325610"/>
+<node TEXT="from __future__ import unicode_literals" ID="ID_1570792743" CREATED="1446554325610" MODIFIED="1446554325610"/>
+<node TEXT="from subprocess import check_output" ID="ID_1191746471" CREATED="1446554325612" MODIFIED="1446554325612"/>
+<node TEXT="def test_echo():" ID="ID_695383386" CREATED="1446554325613" MODIFIED="1446554325613">
+<node TEXT="&apos;&apos;&apos;An example test.&apos;&apos;&apos;" ID="ID_79020362" CREATED="1446554325614" MODIFIED="1446554325614"/>
+<node TEXT="result = run_cmd(&quot;echo hello world&quot;)" ID="ID_886390931" CREATED="1446554325614" MODIFIED="1446554325614"/>
+<node TEXT="assert result == &quot;hello world\n&quot;" ID="ID_43184270" CREATED="1446554325614" MODIFIED="1446554325614"/>
+</node>
+<node TEXT="def run_cmd(cmd):" ID="ID_940568073" CREATED="1446554325614" MODIFIED="1446554325614">
+<node TEXT="&apos;&apos;&apos;Run a shell command `cmd` and return its output.&apos;&apos;&apos;" ID="ID_1669941885" CREATED="1446554325617" MODIFIED="1446554325617"/>
+<node TEXT="return check_output(cmd, shell=True).decode(&apos;utf-8&apos;)" ID="ID_1753288682" CREATED="1446554325617" MODIFIED="1446554325617"/>
+</node>
+</node>
+<node TEXT="tox.ini" ID="ID_256524532" CREATED="1446554081215" MODIFIED="1446554081215" LINK="../cookiecutter_variations/lisnp_docopt/tox.ini">
+<node TEXT="[tox]" ID="ID_1966755925" CREATED="1446554347184" MODIFIED="1446554347184"/>
+<node TEXT="envlist =py27,py33" ID="ID_347416766" CREATED="1446554347184" MODIFIED="1446554347184"/>
+<node TEXT="[testenv]" ID="ID_606437093" CREATED="1446554347185" MODIFIED="1446554347185"/>
+<node TEXT="deps=pytest" ID="ID_1907495389" CREATED="1446554347186" MODIFIED="1446554347186"/>
+<node TEXT="commands=" ID="ID_538598646" CREATED="1446554347186" MODIFIED="1446554347186">
+<node TEXT="py.test" ID="ID_223744031" CREATED="1446554347187" MODIFIED="1446554347187"/>
+</node>
+</node>
+</node>
+<node TEXT="lisnp_click" ID="ID_1565578912" CREATED="1446554548017" MODIFIED="1446554548020" LINK="../cookiecutter_variations/lisnp_click/">
+<node TEXT="lisnp" ID="ID_1654694605" CREATED="1446554568033" MODIFIED="1446554568033" LINK="../cookiecutter_variations/lisnp_click/lisnp/"/>
+<node TEXT="tests" ID="ID_1052554448" CREATED="1446554568034" MODIFIED="1446554568035" LINK="../cookiecutter_variations/lisnp_click/tests/"/>
+<node TEXT=".gitignore" ID="ID_1043528803" CREATED="1446554568035" MODIFIED="1446554568036" LINK="../cookiecutter_variations/lisnp_click/.gitignore"/>
+<node TEXT="README.md" ID="ID_763117356" CREATED="1446554568036" MODIFIED="1446554568037" LINK="../cookiecutter_variations/lisnp_click/README.md"/>
+<node TEXT="setup.cfg" ID="ID_1304337630" CREATED="1446554568037" MODIFIED="1446554568038" LINK="../cookiecutter_variations/lisnp_click/setup.cfg"/>
+<node TEXT="setup.py" ID="ID_1234104559" CREATED="1446554568038" MODIFIED="1446554568039" LINK="../cookiecutter_variations/lisnp_click/setup.py"/>
+<node TEXT="tox.ini" ID="ID_428562854" CREATED="1446554568039" MODIFIED="1446554568040" LINK="../cookiecutter_variations/lisnp_click/tox.ini"/>
+</node>
+<node TEXT="lisnp_flask" ID="ID_1502167960" CREATED="1446554548021" MODIFIED="1446554548022" LINK="../cookiecutter_variations/lisnp_flask/">
+<node TEXT="lisnp_flask" ID="ID_825075988" CREATED="1446554578417" MODIFIED="1446554578417" LINK="../cookiecutter_variations/lisnp_flask/lisnp_flask/"/>
+<node TEXT="requirements" ID="ID_231733518" CREATED="1446554578418" MODIFIED="1446554578418" LINK="../cookiecutter_variations/lisnp_flask/requirements/"/>
+<node TEXT="tests" ID="ID_1444974191" CREATED="1446554578419" MODIFIED="1446554578419" LINK="../cookiecutter_variations/lisnp_flask/tests/"/>
+<node TEXT=".bowerrc" ID="ID_1468877083" CREATED="1446554578420" MODIFIED="1446554578420" LINK="../cookiecutter_variations/lisnp_flask/.bowerrc"/>
+<node TEXT=".gitignore" ID="ID_1272047693" CREATED="1446554578421" MODIFIED="1446554578421" LINK="../cookiecutter_variations/lisnp_flask/.gitignore"/>
+<node TEXT=".travis.yml" ID="ID_63390869" CREATED="1446554578422" MODIFIED="1446554578422" LINK="../cookiecutter_variations/lisnp_flask/.travis.yml"/>
+<node TEXT="bower.json" ID="ID_477151414" CREATED="1446554578423" MODIFIED="1446554578423" LINK="../cookiecutter_variations/lisnp_flask/bower.json"/>
+<node TEXT="LICENSE" ID="ID_1527610503" CREATED="1446554578424" MODIFIED="1446554578424" LINK="../cookiecutter_variations/lisnp_flask/LICENSE"/>
+<node TEXT="manage.py" ID="ID_15934701" CREATED="1446554578425" MODIFIED="1446554578425" LINK="../cookiecutter_variations/lisnp_flask/manage.py"/>
+<node TEXT="Procfile" ID="ID_246250330" CREATED="1446554578426" MODIFIED="1446554578426" LINK="../cookiecutter_variations/lisnp_flask/Procfile"/>
+<node TEXT="README.rst" ID="ID_1907598907" CREATED="1446554578428" MODIFIED="1446554578428" LINK="../cookiecutter_variations/lisnp_flask/README.rst"/>
+<node TEXT="requirements.txt" ID="ID_760607947" CREATED="1446554578429" MODIFIED="1446554578429" LINK="../cookiecutter_variations/lisnp_flask/requirements.txt"/>
+</node>
+<node TEXT="lisnp_python_package" ID="ID_1125100319" CREATED="1446554548022" MODIFIED="1446554548023" LINK="../cookiecutter_variations/lisnp_python_package/">
+<node TEXT="docs" ID="ID_1049175401" CREATED="1446554588745" MODIFIED="1446554588746" LINK="../cookiecutter_variations/lisnp_python_package/docs/"/>
+<node TEXT="lisnp_python_package" ID="ID_996174725" CREATED="1446554588747" MODIFIED="1446554588747" LINK="../cookiecutter_variations/lisnp_python_package/lisnp_python_package/"/>
+<node TEXT="tests" ID="ID_16837337" CREATED="1446554588748" MODIFIED="1446554588748" LINK="../cookiecutter_variations/lisnp_python_package/tests/"/>
+<node TEXT=".editorconfig" ID="ID_727298131" CREATED="1446554588749" MODIFIED="1446554588749" LINK="../cookiecutter_variations/lisnp_python_package/.editorconfig"/>
+<node TEXT=".gitignore" ID="ID_474135640" CREATED="1446554588750" MODIFIED="1446554588750" LINK="../cookiecutter_variations/lisnp_python_package/.gitignore"/>
+<node TEXT=".travis.yml" ID="ID_1453964924" CREATED="1446554588751" MODIFIED="1446554588751" LINK="../cookiecutter_variations/lisnp_python_package/.travis.yml"/>
+<node TEXT="AUTHORS.rst" ID="ID_490743290" CREATED="1446554588751" MODIFIED="1446554588752" LINK="../cookiecutter_variations/lisnp_python_package/AUTHORS.rst"/>
+<node TEXT="CONTRIBUTING.rst" ID="ID_1738423358" CREATED="1446554588752" MODIFIED="1446554588753" LINK="../cookiecutter_variations/lisnp_python_package/CONTRIBUTING.rst"/>
+<node TEXT="HISTORY.rst" ID="ID_1885894651" CREATED="1446554588753" MODIFIED="1446554588754" LINK="../cookiecutter_variations/lisnp_python_package/HISTORY.rst"/>
+<node TEXT="LICENSE" ID="ID_661991924" CREATED="1446554588754" MODIFIED="1446554588755" LINK="../cookiecutter_variations/lisnp_python_package/LICENSE"/>
+<node TEXT="Makefile" ID="ID_109235035" CREATED="1446554588755" MODIFIED="1446554588756" LINK="../cookiecutter_variations/lisnp_python_package/Makefile"/>
+<node TEXT="MANIFEST.in" ID="ID_635219781" CREATED="1446554588756" MODIFIED="1446554588757" LINK="../cookiecutter_variations/lisnp_python_package/MANIFEST.in"/>
+<node TEXT="README.rst" ID="ID_1326748207" CREATED="1446554588757" MODIFIED="1446554588758" LINK="../cookiecutter_variations/lisnp_python_package/README.rst"/>
+<node TEXT="requirements_dev.txt" ID="ID_506177011" CREATED="1446554588758" MODIFIED="1446554588759" LINK="../cookiecutter_variations/lisnp_python_package/requirements_dev.txt"/>
+<node TEXT="setup.cfg" ID="ID_881646119" CREATED="1446554588759" MODIFIED="1446554588759" LINK="../cookiecutter_variations/lisnp_python_package/setup.cfg"/>
+<node TEXT="setup.py" ID="ID_653275653" CREATED="1446554588760" MODIFIED="1446554588760" LINK="../cookiecutter_variations/lisnp_python_package/setup.py"/>
+<node TEXT="tox.ini" ID="ID_74603443" CREATED="1446554588761" MODIFIED="1446554588761" LINK="../cookiecutter_variations/lisnp_python_package/tox.ini"/>
+<node TEXT="travis_pypi_setup.py" ID="ID_991020406" CREATED="1446554588762" MODIFIED="1446554588762" LINK="../cookiecutter_variations/lisnp_python_package/travis_pypi_setup.py"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Models" POSITION="right" ID="ID_806144647" CREATED="1446293442392" MODIFIED="1446293493001" COLOR="#000000" STYLE="fork">
 <edge COLOR="#808080"/>

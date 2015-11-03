@@ -8,7 +8,7 @@
         
     
     ~~~
-        # Transform a mind map to yaml
+        # Transform a mind map to a YAML file
         lisnp a_mind_map.mm mm2yaml a_mind_map.yaml
         ~~~
         

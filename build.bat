@@ -1,4 +1,8 @@
-: Génération des fichiers contenus dans ./mm4p/prog_mmg.mm.
+: The command to generated code from the content from ./mm4p/prog_mmg.mm.
     fab mm4p
-: Exemple d'appel Fabric avec un paramètre.
-    : fab hello:who=Fab
+    : Fabric command example with a parameter.
+        : fab hello:who=Fab
+    
+: A minimal test for the generated code.
+    : python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm
+    
