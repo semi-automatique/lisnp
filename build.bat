@@ -4,5 +4,5 @@
         : fab hello:who=Fab
     
 : A minimal test for the generated code.
-    : python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm
+    python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm
     

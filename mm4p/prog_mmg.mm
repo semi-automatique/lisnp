@@ -94,6 +94,21 @@
 <node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_1976520999" CREATED="1446554266227" MODIFIED="1446554266227">
 <node TEXT="main()" ID="ID_661287748" CREATED="1446554266228" MODIFIED="1446554266228"/>
 </node>
+<node TEXT="mmg write - mmg_stop.txt" ID="ID_90954303" CREATED="1444928448483" MODIFIED="1444946339734" LINK="./mmg_stop.txt">
+<font NAME="SansSerif" SIZE="10" BOLD="true"/>
+<node TEXT="Ce fichier marque la fin de la cr&#xe9;ation d&apos;un fichier par mm4p.py." ID="ID_971824687" CREATED="1444928933442" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il est n&#xe9;cessaire pour chaque fichier &#xe0; g&#xe9;n&#xe9;rer &#xe0; l&#x2019;aide d&#x2019;un mindmap." ID="ID_533904080" CREATED="1444929236011" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il permet de r&#xe9;cup&#xe9;rer les lignes qui suivent celles qui composent un fichier dans un mindmap." ID="ID_376381801" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+<node TEXT="Il ne sera plus n&#xe9;cessaire quand le script mm4p.py sera compl&#xe9;t&#xe9;." ID="ID_854056939" CREATED="1444928448483" MODIFIED="1444929865712">
+<font NAME="Courier New"/>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="docs" ID="ID_1230690609" CREATED="1444928576844" MODIFIED="1444928589261" LINK="../docs/">
@@ -8344,7 +8359,7 @@
 <node TEXT="" ID="ID_526693564" CREATED="1446556803049" MODIFIED="1446556803049"/>
 </node>
 <node TEXT=": A minimal test for the generated code." ID="ID_656503690" CREATED="1446556805130" MODIFIED="1446556834908">
-<node TEXT=": python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1446556756320"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1446557804489"/>
 <node TEXT="" ID="ID_1602043231" CREATED="1446556837564" MODIFIED="1446556837564"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
