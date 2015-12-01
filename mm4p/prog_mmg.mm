@@ -152,8 +152,9 @@
 </node>
 <node TEXT=")" ID="ID_1645450511" CREATED="1446554293454" MODIFIED="1446554293454"/>
 </node>
-<node TEXT="lisnp" ID="ID_433690858" CREATED="1446554578417" MODIFIED="1446556217484" LINK="../lisnp/">
+<node TEXT="lisnp" ID="ID_433690858" CREATED="1446554578417" MODIFIED="1448918267265" LINK="../lisnp/">
 <icon BUILTIN="folder"/>
+<font BOLD="true"/>
 <node TEXT="mmg write - lisnp.py" ID="ID_1403245297" CREATED="1446554081208" MODIFIED="1446556242572" LINK="../lisnp/lisnp.py">
 <font BOLD="true"/>
 <node TEXT="#!/usr/bin/env python" ID="ID_1515545934" CREATED="1446554266213" MODIFIED="1446554266213"/>
@@ -171,6 +172,8 @@
 <node TEXT="&apos;&apos;&apos;" ID="ID_103336186" CREATED="1446554266224" MODIFIED="1446554266224"/>
 <node TEXT="from __future__ import unicode_literals, print_function" ID="ID_228105782" CREATED="1446554266224" MODIFIED="1446554266224"/>
 <node TEXT="from docopt import docopt" ID="ID_817089377" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="import os" ID="ID_1245781413" CREATED="1448923481892" MODIFIED="1448923481892"/>
+<node TEXT="import os.path" ID="ID_1458230181" CREATED="1448923481892" MODIFIED="1448923481892"/>
 <node TEXT="__version__ = &quot;0.1.0&quot;" ID="ID_1585137295" CREATED="1446554266225" MODIFIED="1446554266225"/>
 <node TEXT="__author__ = &quot;semi-automatique&quot;" ID="ID_448913475" CREATED="1446554266226" MODIFIED="1446554266226"/>
 <node TEXT="__license__ = &quot;MIT&quot;" ID="ID_139266411" CREATED="1446554266226" MODIFIED="1446554266226"/>
@@ -178,6 +181,14 @@
 <node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_207723861" CREATED="1446554266227" MODIFIED="1446556479970"/>
 <node TEXT="args = docopt(__doc__, version=__version__)" ID="ID_1957027079" CREATED="1446554266227" MODIFIED="1446554266227"/>
 <node TEXT="print(args)" ID="ID_569332541" CREATED="1446554266227" MODIFIED="1446554266227"/>
+<node TEXT="mm_file_name = args.get(&apos;&lt;name&gt;&apos;)[0]" ID="ID_637810186" CREATED="1448923521495" MODIFIED="1448927757285"/>
+<node TEXT="print(mm_file_name)" ID="ID_1126413850" CREATED="1446554266227" MODIFIED="1448925727979"/>
+<node TEXT="if os.path.isfile(mm_file_name) and os.access(mm_file_name, os.R_OK):" ID="ID_128147772" CREATED="1448923481894" MODIFIED="1448927783843">
+<node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1912911980" CREATED="1448923481895" MODIFIED="1448927791246"/>
+</node>
+<node TEXT="else:" ID="ID_1771263008" CREATED="1448923481895" MODIFIED="1448927786723">
+<node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_807351496" CREATED="1448923481895" MODIFIED="1448927795454"/>
+</node>
 </node>
 <node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_1976520999" CREATED="1446554266227" MODIFIED="1446554266227">
 <node TEXT="main()" ID="ID_661287748" CREATED="1446554266228" MODIFIED="1446554266228"/>
@@ -278,6 +289,33 @@
 <icon BUILTIN="folder"/>
 <node TEXT="prog_mmg.mm" ID="ID_1438292847" CREATED="1444941209236" MODIFIED="1444941216022" LINK="prog_mmg.mm">
 <icon BUILTIN="edit"/>
+</node>
+</node>
+<node TEXT="tests" ID="ID_44975183" CREATED="1448918184800" MODIFIED="1448918196776" LINK="../tests/">
+<icon BUILTIN="folder"/>
+<node TEXT="mindmap" ID="ID_938185020" CREATED="1448918205575" MODIFIED="1448918231178" LINK="../tests/mindmap/">
+<icon BUILTIN="folder"/>
+<node TEXT="empty.mm" ID="ID_1419219685" CREATED="1448918214317" MODIFIED="1448918224159" LINK="../tests/mindmap/empty.mm">
+<icon BUILTIN="edit"/>
+</node>
+<node TEXT="ListsTest.mm" ID="ID_1757202965" CREATED="1448918214319" MODIFIED="1448918224160" LINK="../tests/mindmap/ListsTest.mm">
+<icon BUILTIN="edit"/>
+</node>
+<node TEXT="RichtextTests.mm" ID="ID_962145150" CREATED="1448918214320" MODIFIED="1448918224160" LINK="../tests/mindmap/RichtextTests.mm">
+<icon BUILTIN="edit"/>
+</node>
+<node TEXT="root-node-only.mm" ID="ID_236158824" CREATED="1448918214321" MODIFIED="1448918224160" LINK="../tests/mindmap/root-node-only.mm">
+<icon BUILTIN="edit"/>
+</node>
+<node TEXT="StructuredMapTest.mm" ID="ID_1266515273" CREATED="1448918214321" MODIFIED="1448918224160" LINK="../tests/mindmap/StructuredMapTest.mm">
+<icon BUILTIN="edit"/>
+</node>
+<node TEXT="Testmap-for-automated-Tests.mm" ID="ID_596754545" CREATED="1448918214322" MODIFIED="1448918224160" LINK="../tests/mindmap/Testmap-for-automated-Tests.mm">
+<icon BUILTIN="edit"/>
+</node>
+</node>
+<node TEXT="yaml" ID="ID_559909030" CREATED="1448918205577" MODIFIED="1448918231180" LINK="../tests/yaml/">
+<icon BUILTIN="folder"/>
 </node>
 </node>
 <node TEXT="mmg write - lisnp-base-definition.md" ID="ID_1927231959" CREATED="1444928563686" MODIFIED="1446478004057" LINK="../lisnp-base-definition.md">
@@ -8430,8 +8468,9 @@
 </node>
 </node>
 </node>
-<node TEXT="mmg write - build.bat" ID="ID_1455728293" CREATED="1444928563686" MODIFIED="1444946377392" LINK="../build.bat">
+<node TEXT="mmg write - build.bat" ID="ID_1455728293" CREATED="1444928563686" MODIFIED="1448918244366" LINK="../build.bat">
 <icon BUILTIN="edit"/>
+<icon BUILTIN="pencil"/>
 <font NAME="SansSerif" BOLD="true"/>
 <node TEXT=": The command to generated code from the content from ./mm4p/prog_mmg.mm." ID="ID_472428303" CREATED="1444937933783" MODIFIED="1446415433445">
 <font NAME="SansSerif"/>
@@ -8446,9 +8485,11 @@
 </node>
 <node TEXT="" ID="ID_526693564" CREATED="1446556803049" MODIFIED="1446556803049"/>
 </node>
+<node TEXT=": The file do not exist." ID="ID_763470474" CREATED="1446556805130" MODIFIED="1448922812448">
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/nofile.mm" ID="ID_1849088906" CREATED="1446556595282" MODIFIED="1448927817973"/>
+</node>
 <node TEXT=": A minimal test for the generated code." ID="ID_656503690" CREATED="1446556805130" MODIFIED="1446556834908">
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./mm4p/prog_mmg.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1446557804489"/>
-<node TEXT="" ID="ID_1602043231" CREATED="1446556837564" MODIFIED="1446556837564"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1448927825908"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
 <font NAME="SansSerif" BOLD="true"/>
@@ -8472,8 +8513,8 @@
 </node>
 </node>
 <node TEXT="Idea" POSITION="right" ID="ID_1649416054" CREATED="1446478010924" MODIFIED="1446478028388" COLOR="#000000" STYLE="fork">
-<edge COLOR="#808080"/>
 <font SIZE="10" BOLD="false" ITALIC="false"/>
+<edge COLOR="#808080"/>
 <node TEXT="References" ID="ID_864368074" CREATED="1446554015563" MODIFIED="1446554020595">
 <node TEXT="https://pypi.python.org/pypi/python-creole/" ID="ID_262611047" CREATED="1446478018913" MODIFIED="1446478018913" LINK="https://pypi.python.org/pypi/python-creole/"/>
 <node TEXT="http://lepture.com/en/2014/markdown-parsers-in-python" ID="ID_276349121" CREATED="1446478064770" MODIFIED="1446478064770" LINK="http://lepture.com/en/2014/markdown-parsers-in-python"/>
@@ -8830,13 +8871,14 @@
 </node>
 </node>
 </node>
+<node TEXT="prog_mmg.mm" ID="ID_1203328078" CREATED="1448927330482" MODIFIED="1448927330521" LINK="../../../Trav2012/goGui/Gui/App/mmg/prog_mmg.mm"/>
 </node>
 <node TEXT="Models" POSITION="right" ID="ID_806144647" CREATED="1446293442392" MODIFIED="1446293493001" COLOR="#000000" STYLE="fork">
-<edge COLOR="#808080"/>
 <font SIZE="10" BOLD="false" ITALIC="false"/>
+<edge COLOR="#808080"/>
 <node TEXT="PEP: 12" ID="ID_415773661" CREATED="1446293457004" MODIFIED="1446293499103" COLOR="#000000" STYLE="fork">
-<edge COLOR="#808080"/>
 <font SIZE="10" BOLD="false" ITALIC="false"/>
+<edge COLOR="#808080"/>
 <node TEXT="Title: Sample reStructuredText PEP Template" ID="ID_124536710" CREATED="1446293457004" MODIFIED="1446293457004">
 <node TEXT="Version: $Revision$" ID="ID_789301986" CREATED="1446293457006" MODIFIED="1446293457006"/>
 <node TEXT="Last-Modified: $Date$" ID="ID_1561622941" CREATED="1446293457006" MODIFIED="1446293457006"/>
