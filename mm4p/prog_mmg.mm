@@ -8488,8 +8488,13 @@
 <node TEXT=": The file do not exist." ID="ID_763470474" CREATED="1446556805130" MODIFIED="1448922812448">
 <node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/nofile.mm" ID="ID_1849088906" CREATED="1446556595282" MODIFIED="1448927817973"/>
 </node>
-<node TEXT=": A minimal test for the generated code." ID="ID_656503690" CREATED="1446556805130" MODIFIED="1446556834908">
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_1543743121" CREATED="1446556595282" MODIFIED="1448927825908"/>
+<node TEXT=": Minimal tests for the generated code." ID="ID_1159541905" CREATED="1446556805130" MODIFIED="1450137258624">
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_850802776" CREATED="1446556595282" MODIFIED="1448927825908"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm" ID="ID_876554616" CREATED="1450137238181" MODIFIED="1450137238181"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm" ID="ID_175580676" CREATED="1450137238181" MODIFIED="1450137238181"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm" ID="ID_1068951436" CREATED="1450137238181" MODIFIED="1450137238181"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm" ID="ID_220338861" CREATED="1450137238181" MODIFIED="1450137238181"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm" ID="ID_1376459136" CREATED="1450137238181" MODIFIED="1450137238181"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
 <font NAME="SansSerif" BOLD="true"/>

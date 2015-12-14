@@ -5,5 +5,10 @@
     
 : The file do not exist.
     python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/nofile.mm
-: A minimal test for the generated code.
+: Minimal tests for the generated code.
     python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm
+    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm
+    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm
+    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm
+    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm
+    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm
