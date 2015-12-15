@@ -171,23 +171,57 @@
 </node>
 <node TEXT="&apos;&apos;&apos;" ID="ID_103336186" CREATED="1446554266224" MODIFIED="1446554266224"/>
 <node TEXT="from __future__ import unicode_literals, print_function" ID="ID_228105782" CREATED="1446554266224" MODIFIED="1446554266224"/>
+<node TEXT="# import elementtree.ElementTree as ET" ID="ID_1767006192" CREATED="1342355222839" MODIFIED="1450184759430" STYLE="as_parent">
+<font NAME="Lucida Sans Typewriter" BOLD="false"/>
+</node>
+<node TEXT="import xml.etree.ElementTree as ET" ID="ID_1108182695" CREATED="1450184866472" MODIFIED="1450184866472"/>
+<node TEXT="&apos;&apos;&apos;" ID="ID_1100982567" CREATED="1450185180832" MODIFIED="1450185431354">
+<node TEXT="TODO Replace ElementTree with defusedxml" ID="ID_63663324" CREATED="1450185188575" MODIFIED="1450185526945">
+<node TEXT="19.6. XML vulnerabilities" ID="ID_1411594624" CREATED="1450185528136" MODIFIED="1450185531712"/>
+<node TEXT="https://docs.python.org/2/library/xml.html#xml-vulnerabilities" ID="ID_625295056" CREATED="1450185258094" MODIFIED="1450185258094" LINK="https://docs.python.org/2/library/xml.html#xml-vulnerabilities"/>
+<node TEXT="https://pypi.python.org/pypi/defusedxml/" ID="ID_999886755" CREATED="1450185272738" MODIFIED="1450185272738" LINK="https://pypi.python.org/pypi/defusedxml/"/>
+<node TEXT="These external packages are recommended for any code that parses untrusted XML data." ID="ID_104513344" CREATED="1450185236694" MODIFIED="1450185236694"/>
+<node TEXT="defusedxml is a pure Python package with modified subclasses of all stdlib XML parsers that prevent any potentially malicious operation. The package also ships with example exploits and extended documentation on more XML exploits like xpath injection." ID="ID_207304482" CREATED="1450185236694" MODIFIED="1450185236694"/>
+<node TEXT="defusedexpat provides a modified libexpat and patched replacement pyexpat extension module with countermeasures against entity expansion DoS attacks. Defusedexpat still allows a sane and configurable amount of entity expansions. The modifications will be merged into future releases of Python." ID="ID_1702488302" CREATED="1450185236695" MODIFIED="1450185236695"/>
+<node TEXT="The workarounds and modifications are not included in patch releases as they break backward compatibility. After all inline DTD and entity expansion are well-defined XML features." ID="ID_240404242" CREATED="1450185236697" MODIFIED="1450185236697"/>
+<node TEXT="Example of use :" ID="ID_1730325209" CREATED="1450185286619" MODIFIED="1450185344807">
+<node TEXT="https://github.com/lorien/grab/pull/150/files?diff=split" ID="ID_1515912304" CREATED="1450185336619" MODIFIED="1450185336619" LINK="https://github.com/lorien/grab/pull/150/files?diff=split"/>
+</node>
+</node>
+<node TEXT="&apos;&apos;&apos;" ID="ID_1872461692" CREATED="1450185180832" MODIFIED="1450185434738"/>
+</node>
 <node TEXT="from docopt import docopt" ID="ID_817089377" CREATED="1446554266224" MODIFIED="1446554266224"/>
 <node TEXT="import os" ID="ID_1245781413" CREATED="1448923481892" MODIFIED="1448923481892"/>
 <node TEXT="import os.path" ID="ID_1458230181" CREATED="1448923481892" MODIFIED="1448923481892"/>
 <node TEXT="__version__ = &quot;0.1.0&quot;" ID="ID_1585137295" CREATED="1446554266225" MODIFIED="1446554266225"/>
 <node TEXT="__author__ = &quot;semi-automatique&quot;" ID="ID_448913475" CREATED="1446554266226" MODIFIED="1446554266226"/>
 <node TEXT="__license__ = &quot;MIT&quot;" ID="ID_139266411" CREATED="1446554266226" MODIFIED="1446554266226"/>
+<node TEXT="def mm2yaml(mm_file_name):" ID="ID_1841821349" CREATED="1446554266227" MODIFIED="1450184016903">
+<node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_1254769626" CREATED="1446554266227" MODIFIED="1446556479970"/>
+<node TEXT="print(&quot;linsp mm2yaml was called.&quot;)" ID="ID_613486111" CREATED="1448923481895" MODIFIED="1450183419831"/>
+<node TEXT="if os.path.isfile(mm_file_name) and os.access(mm_file_name, os.R_OK):" ID="ID_563709623" CREATED="1448923481894" MODIFIED="1448927783843">
+<node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1274211777" CREATED="1448923481895" MODIFIED="1448927791246"/>
+<node TEXT="mm_file = ET.parse(mm_file_name)" ID="ID_169136450" CREATED="1342355222886" MODIFIED="1450184484962">
+<font NAME="Lucida Sans Typewriter"/>
+</node>
+<node TEXT="print(mm_file)" ID="ID_1598996921" CREATED="1342355222886" MODIFIED="1450184898302">
+<font NAME="Lucida Sans Typewriter"/>
+</node>
+<node TEXT="# Next - write the file in yaml format." ID="ID_661506522" CREATED="1450184614690" MODIFIED="1450184654886"/>
+</node>
+<node TEXT="else:" ID="ID_1528271384" CREATED="1448923481895" MODIFIED="1448927786723">
+<node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_1438506477" CREATED="1448923481895" MODIFIED="1448927795454"/>
+</node>
+</node>
 <node TEXT="def main():" ID="ID_1799732591" CREATED="1446554266227" MODIFIED="1446554266227">
 <node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_207723861" CREATED="1446554266227" MODIFIED="1446556479970"/>
 <node TEXT="args = docopt(__doc__, version=__version__)" ID="ID_1957027079" CREATED="1446554266227" MODIFIED="1446554266227"/>
 <node TEXT="print(args)" ID="ID_569332541" CREATED="1446554266227" MODIFIED="1446554266227"/>
+<node TEXT="mm2yaml_cmd = args.get(&apos;mm2yaml&apos;)" ID="ID_1446675556" CREATED="1448923521495" MODIFIED="1450183586250"/>
 <node TEXT="mm_file_name = args.get(&apos;&lt;name&gt;&apos;)[0]" ID="ID_637810186" CREATED="1448923521495" MODIFIED="1448927757285"/>
 <node TEXT="print(mm_file_name)" ID="ID_1126413850" CREATED="1446554266227" MODIFIED="1448925727979"/>
-<node TEXT="if os.path.isfile(mm_file_name) and os.access(mm_file_name, os.R_OK):" ID="ID_128147772" CREATED="1448923481894" MODIFIED="1448927783843">
-<node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1912911980" CREATED="1448923481895" MODIFIED="1448927791246"/>
-</node>
-<node TEXT="else:" ID="ID_1771263008" CREATED="1448923481895" MODIFIED="1448927786723">
-<node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_807351496" CREATED="1448923481895" MODIFIED="1448927795454"/>
+<node TEXT="if mm2yaml_cmd:" ID="ID_502513614" CREATED="1450184104182" MODIFIED="1450184121248">
+<node TEXT="mm2yaml(mm_file_name)" ID="ID_985018098" CREATED="1450183978204" MODIFIED="1450184011289"/>
 </node>
 </node>
 <node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_1976520999" CREATED="1446554266227" MODIFIED="1446554266227">
