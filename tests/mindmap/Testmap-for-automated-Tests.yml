@@ -495,14 +495,35 @@ _root: !!python/object:xml.etree.ElementTree.Element
       - !!python/object:xml.etree.ElementTree.Element
         _children:
         - !!python/object:xml.etree.ElementTree.Element
-          _children: []
+          _children:
+          - !!python/object:xml.etree.ElementTree.Element
+            _children: []
+            attrib:
+              COLOR: '#000000'
+              DESTINATION: Freemind_Link_1186464171
+              ENDARROW: DEFAULT
+              ENDINCLINATION: 184;0;
+              FONT_FAMILY: SansSerif
+              FONT_SIZE: '9'
+              SHAPE: CUBIC_CURVE
+              STARTARROW: NONE
+              STARTINCLINATION: 184;0;
+              TRANSPARENCY: '80'
+              WIDTH: '2'
+            tag: arrowlink
+            tail: '
+
+              '
           attrib:
             CREATED: '1160462718297'
             ID: Freemind_Link_1441123033
-            MODIFIED: '1160462720203'
+            MODIFIED: '1450742004860'
             TEXT: fold1
           tag: node
           tail: '
+
+            '
+          text: '
 
             '
         - !!python/object:xml.etree.ElementTree.Element

@@ -1,7 +1,7 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Testmap for automated Tests" ID="ID_152445427" CREATED="1447632712709" MODIFIED="1447632833478"><hook NAME="MapStyle">
-    <properties show_note_icons="true" show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
@@ -126,7 +126,9 @@
 <node TEXT="with a linbreak &#xa; subnode" ID="Freemind_Link_1312609197" CREATED="1160462703227" MODIFIED="1160462706665"/>
 <node TEXT="and another subnode" ID="Freemind_Link_123530478" CREATED="1160462707747" MODIFIED="1160462712132"/>
 <node TEXT="and some folded subnodes" ID="Freemind_Link_1168263765" CREATED="1160462712621" MODIFIED="1160462717788">
-<node TEXT="fold1" ID="Freemind_Link_1441123033" CREATED="1160462718297" MODIFIED="1160462720203"/>
+<node TEXT="fold1" ID="Freemind_Link_1441123033" CREATED="1160462718297" MODIFIED="1450742004860">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="Freemind_Link_1186464171" STARTINCLINATION="184;0;" ENDINCLINATION="184;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
 <node TEXT="fold2" ID="Freemind_Link_1601858134" CREATED="1160462720606" MODIFIED="1160462721786"/>
 <node TEXT="fold3" ID="Freemind_Link_1186464171" CREATED="1160462722166" MODIFIED="1160462723841"/>
 </node>
