@@ -12,6 +12,7 @@ Options:
 from __future__ import unicode_literals, print_function
 # import elementtree.ElementTree as ET
 import xml.etree.ElementTree as ET
+import yaml
 '''
     TODO Replace ElementTree with defusedxml
         19.6. XML vulnerabilities
@@ -38,6 +39,9 @@ def mm2yaml(mm_file_name):
         mm_file = ET.parse(mm_file_name)
         print(mm_file)
         # Next - write the file in yaml format.
+        yaml_file_name = os.path.splitext(mm_file_name)[0]+'.yml'
+        with open(yaml_file_name, 'w') as outfile:
+            outfile.write( yaml.dump(mm_file, default_flow_style=False) )
     else:
         print("Either file is missing or is not readable")
 def main():

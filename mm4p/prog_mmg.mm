@@ -175,6 +175,7 @@
 <font NAME="Lucida Sans Typewriter" BOLD="false"/>
 </node>
 <node TEXT="import xml.etree.ElementTree as ET" ID="ID_1108182695" CREATED="1450184866472" MODIFIED="1450184866472"/>
+<node TEXT="import yaml" ID="ID_780910455" CREATED="1450740885750" MODIFIED="1450740885750"/>
 <node TEXT="&apos;&apos;&apos;" ID="ID_1100982567" CREATED="1450185180832" MODIFIED="1450185431354">
 <node TEXT="TODO Replace ElementTree with defusedxml" ID="ID_63663324" CREATED="1450185188575" MODIFIED="1450185526945">
 <node TEXT="19.6. XML vulnerabilities" ID="ID_1411594624" CREATED="1450185528136" MODIFIED="1450185531712"/>
@@ -208,6 +209,10 @@
 <font NAME="Lucida Sans Typewriter"/>
 </node>
 <node TEXT="# Next - write the file in yaml format." ID="ID_661506522" CREATED="1450184614690" MODIFIED="1450184654886"/>
+<node TEXT="yaml_file_name = os.path.splitext(mm_file_name)[0]+&apos;.yml&apos;" ID="ID_1921917096" CREATED="1450740925392" MODIFIED="1450740961108"/>
+<node TEXT="with open(yaml_file_name, &apos;w&apos;) as outfile:" ID="ID_1924582228" CREATED="1450740982685" MODIFIED="1450740994644">
+<node TEXT="outfile.write( yaml.dump(mm_file, default_flow_style=False) )" ID="ID_1456513461" CREATED="1450740982685" MODIFIED="1450741377221"/>
+</node>
 </node>
 <node TEXT="else:" ID="ID_1528271384" CREATED="1448923481895" MODIFIED="1448927786723">
 <node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_1438506477" CREATED="1448923481895" MODIFIED="1448927795454"/>
