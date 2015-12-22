@@ -161,7 +161,8 @@
 <node TEXT="# -*- coding: utf-8 -*-" ID="ID_1714014193" CREATED="1446554266213" MODIFIED="1446554266213"/>
 <node TEXT="&apos;&apos;&apos;lisnp" ID="ID_202887048" CREATED="1446554266216" MODIFIED="1446556279382"/>
 <node TEXT="Usage:" ID="ID_1063795682" CREATED="1446554266217" MODIFIED="1446554266217">
-<node TEXT="lisnp mm2yaml &lt;name&gt;..." ID="ID_880804099" CREATED="1446554266223" MODIFIED="1446556340564"/>
+<node TEXT="lisnp mm2yaml &lt;file_name&gt;..." ID="ID_880804099" CREATED="1446554266223" MODIFIED="1450806687208"/>
+<node TEXT="lisnp yaml2mm &lt;file_name&gt;..." ID="ID_737213816" CREATED="1446554266223" MODIFIED="1450806815062"/>
 <node TEXT="lisnp -h | --help" ID="ID_1432870299" CREATED="1446554266223" MODIFIED="1446556420196"/>
 <node TEXT="lisnp --version" ID="ID_351929660" CREATED="1446554266223" MODIFIED="1446556427561"/>
 </node>
@@ -197,8 +198,8 @@
 <node TEXT="__version__ = &quot;0.1.0&quot;" ID="ID_1585137295" CREATED="1446554266225" MODIFIED="1446554266225"/>
 <node TEXT="__author__ = &quot;semi-automatique&quot;" ID="ID_448913475" CREATED="1446554266226" MODIFIED="1446554266226"/>
 <node TEXT="__license__ = &quot;MIT&quot;" ID="ID_139266411" CREATED="1446554266226" MODIFIED="1446554266226"/>
-<node TEXT="def mm2yaml(mm_file_name):" ID="ID_1841821349" CREATED="1446554266227" MODIFIED="1450184016903">
-<node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_1254769626" CREATED="1446554266227" MODIFIED="1446556479970"/>
+<node TEXT="def mm2yaml(mm_file_name):" ID="ID_1841821349" CREATED="1446554266227" MODIFIED="1450805630675">
+<font BOLD="true"/>
 <node TEXT="print(&quot;linsp mm2yaml was called.&quot;)" ID="ID_613486111" CREATED="1448923481895" MODIFIED="1450183419831"/>
 <node TEXT="if os.path.isfile(mm_file_name) and os.access(mm_file_name, os.R_OK):" ID="ID_563709623" CREATED="1448923481894" MODIFIED="1448927783843">
 <node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1274211777" CREATED="1448923481895" MODIFIED="1448927791246"/>
@@ -209,24 +210,58 @@
 <font NAME="Lucida Sans Typewriter"/>
 </node>
 <node TEXT="# Next - write the file in yaml format." ID="ID_661506522" CREATED="1450184614690" MODIFIED="1450184654886"/>
-<node TEXT="yaml_file_name = os.path.splitext(mm_file_name)[0]+&apos;.yml&apos;" ID="ID_1921917096" CREATED="1450740925392" MODIFIED="1450740961108"/>
+<node TEXT="yaml_file_name = os.path.splitext(mm_file_name)[0]+&apos;.yml&apos;" ID="ID_1921917096" CREATED="1450740925392" MODIFIED="1450806075415">
+<icon BUILTIN="messagebox_warning"/>
+</node>
 <node TEXT="with open(yaml_file_name, &apos;w&apos;) as outfile:" ID="ID_1924582228" CREATED="1450740982685" MODIFIED="1450740994644">
-<node TEXT="outfile.write( yaml.dump(mm_file, default_flow_style=False) )" ID="ID_1456513461" CREATED="1450740982685" MODIFIED="1450741377221"/>
+<node TEXT="# TODO Etudier yaml.safe_dump()" ID="ID_1456513461" CREATED="1450740982685" MODIFIED="1450808580751">
+<icon BUILTIN="messagebox_warning"/>
+<font BOLD="true"/>
+</node>
+<node TEXT="outfile.write( yaml.dump(mm_file, default_flow_style=False) )" ID="ID_1171182297" CREATED="1450740982685" MODIFIED="1450808550942"/>
 </node>
 </node>
 <node TEXT="else:" ID="ID_1528271384" CREATED="1448923481895" MODIFIED="1448927786723">
 <node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_1438506477" CREATED="1448923481895" MODIFIED="1448927795454"/>
 </node>
 </node>
-<node TEXT="def main():" ID="ID_1799732591" CREATED="1446554266227" MODIFIED="1446554266227">
+<node TEXT="def yaml2mm(yaml_file_name):" ID="ID_751318095" CREATED="1446554266227" MODIFIED="1450805735527">
+<font BOLD="true"/>
+<node TEXT="print(&quot;linsp yaml2mm was called.&quot;)" ID="ID_1366469903" CREATED="1448923481895" MODIFIED="1450805747542"/>
+<node TEXT="if os.path.isfile(yaml_file_name) and os.access(yaml_file_name, os.R_OK):" ID="ID_577998718" CREATED="1448923481894" MODIFIED="1450805769111">
+<node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1641008403" CREATED="1448923481895" MODIFIED="1448927791246"/>
+<node TEXT="with open(yaml_file_name, &apos;r&apos;) as stream:" ID="ID_232481438" CREATED="1450805980242" MODIFIED="1450807173953">
+<node TEXT="yaml_file  = yaml.load(stream)" ID="ID_815881912" CREATED="1450805980242" MODIFIED="1450806016167"/>
+<node TEXT="print(yaml_file)" ID="ID_1703191203" CREATED="1342355222886" MODIFIED="1450805798531">
+<font NAME="Lucida Sans Typewriter"/>
+</node>
+</node>
+<node TEXT="# Next - write the file in mm format." ID="ID_1231344021" CREATED="1450184614690" MODIFIED="1450805814560"/>
+<node TEXT="mm_file_name = os.path.splitext(yaml_file_name)[0]+&apos;.mm&apos;" ID="ID_1793825458" CREATED="1450740925392" MODIFIED="1450806072168">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node TEXT="with open(mm_file_name, &apos;w&apos;) as outfile:" ID="ID_967070366" CREATED="1450740982685" MODIFIED="1450805839203">
+<node TEXT="root = yaml_file.getroot()" ID="ID_625770382" CREATED="1450808004906" MODIFIED="1450810281195"/>
+<node TEXT="print(ET.tostring(root, &quot;utf-8&quot;))" ID="ID_1009753263" CREATED="1450808004906" MODIFIED="1450810348665"/>
+<node TEXT="yaml_file.write(outfile)" ID="ID_45345719" CREATED="1450808004906" MODIFIED="1450811084257"/>
+</node>
+</node>
+<node TEXT="else:" ID="ID_1400521524" CREATED="1448923481895" MODIFIED="1448927786723">
+<node TEXT="print(&quot;Either file is missing or is not readable&quot;)" ID="ID_1264178599" CREATED="1448923481895" MODIFIED="1448927795454"/>
+</node>
+</node>
+<node TEXT="def main():" ID="ID_1799732591" CREATED="1446554266227" MODIFIED="1450806381211">
+<font BOLD="true"/>
 <node TEXT="&apos;&apos;&apos;Main entry point for the lisnp CLI.&apos;&apos;&apos;" ID="ID_207723861" CREATED="1446554266227" MODIFIED="1446556479970"/>
 <node TEXT="args = docopt(__doc__, version=__version__)" ID="ID_1957027079" CREATED="1446554266227" MODIFIED="1446554266227"/>
 <node TEXT="print(args)" ID="ID_569332541" CREATED="1446554266227" MODIFIED="1446554266227"/>
-<node TEXT="mm2yaml_cmd = args.get(&apos;mm2yaml&apos;)" ID="ID_1446675556" CREATED="1448923521495" MODIFIED="1450183586250"/>
-<node TEXT="mm_file_name = args.get(&apos;&lt;name&gt;&apos;)[0]" ID="ID_637810186" CREATED="1448923521495" MODIFIED="1448927757285"/>
-<node TEXT="print(mm_file_name)" ID="ID_1126413850" CREATED="1446554266227" MODIFIED="1448925727979"/>
-<node TEXT="if mm2yaml_cmd:" ID="ID_502513614" CREATED="1450184104182" MODIFIED="1450184121248">
-<node TEXT="mm2yaml(mm_file_name)" ID="ID_985018098" CREATED="1450183978204" MODIFIED="1450184011289"/>
+<node TEXT="file_name = args.get(&apos;&lt;file_name&gt;&apos;)[0]" ID="ID_637810186" CREATED="1448923521495" MODIFIED="1450806687214"/>
+<node TEXT="print(file_name)" ID="ID_1126413850" CREATED="1446554266227" MODIFIED="1450806786721"/>
+<node TEXT="if args.get(&apos;mm2yaml&apos;):" ID="ID_502513614" CREATED="1450184104182" MODIFIED="1450806555780">
+<node TEXT="mm2yaml(file_name)" ID="ID_985018098" CREATED="1450183978204" MODIFIED="1450806775708"/>
+</node>
+<node TEXT="if args.get(&apos;yaml2mm&apos;):" ID="ID_865260736" CREATED="1450806508629" MODIFIED="1450806589851">
+<node TEXT="yaml2mm(file_name)" ID="ID_1997206262" CREATED="1450183978204" MODIFIED="1450806778520"/>
 </node>
 </node>
 <node TEXT="if __name__ == &apos;__main__&apos;:" ID="ID_1976520999" CREATED="1446554266227" MODIFIED="1446554266227">
@@ -8527,13 +8562,25 @@
 <node TEXT=": The file do not exist." ID="ID_763470474" CREATED="1446556805130" MODIFIED="1448922812448">
 <node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/nofile.mm" ID="ID_1849088906" CREATED="1446556595282" MODIFIED="1448927817973"/>
 </node>
-<node TEXT=": Minimal tests for the generated code." ID="ID_1159541905" CREATED="1446556805130" MODIFIED="1450137258624">
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_850802776" CREATED="1446556595282" MODIFIED="1448927825908"/>
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm" ID="ID_876554616" CREATED="1450137238181" MODIFIED="1450137238181"/>
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm" ID="ID_175580676" CREATED="1450137238181" MODIFIED="1450137238181"/>
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm" ID="ID_1068951436" CREATED="1450137238181" MODIFIED="1450137238181"/>
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm" ID="ID_220338861" CREATED="1450137238181" MODIFIED="1450137238181"/>
-<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm" ID="ID_1376459136" CREATED="1450137238181" MODIFIED="1450137238181"/>
+<node TEXT=": Minimal tests for mm2yaml." ID="ID_453244050" CREATED="1450807128931" MODIFIED="1450807128931">
+<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_1228611404" CREATED="1450807128931" MODIFIED="1450807128931"/>
+<node TEXT=": python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm" ID="ID_1596658835" CREATED="1450807128931" MODIFIED="1450810358156">
+<font BOLD="true"/>
+</node>
+<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm" ID="ID_1046833720" CREATED="1450807128931" MODIFIED="1450807128931"/>
+<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm" ID="ID_1272252334" CREATED="1450807128931" MODIFIED="1450807128931"/>
+<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm" ID="ID_1814076560" CREATED="1450807128931" MODIFIED="1450807128931"/>
+<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm" ID="ID_1155021550" CREATED="1450807128931" MODIFIED="1450807128931"/>
+</node>
+<node TEXT=": Minimal tests for yaml2mm." ID="ID_1447709644" CREATED="1450807128931" MODIFIED="1450807128931">
+<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/empty.yml" ID="ID_1853204571" CREATED="1450807128932" MODIFIED="1450807128932"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/root-node-only.yml" ID="ID_1438017645" CREATED="1450807128932" MODIFIED="1450810362821">
+<font BOLD="true"/>
+</node>
+<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/Testmap-for-automated-Tests.yml" ID="ID_1389022845" CREATED="1450807128932" MODIFIED="1450807128932"/>
+<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/ListsTest.yml" ID="ID_861290024" CREATED="1450807128932" MODIFIED="1450807128932"/>
+<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/RichtextTests.yml" ID="ID_1254819666" CREATED="1450807128932" MODIFIED="1450807128932"/>
+<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/StructuredMapTest.yml" ID="ID_1577130095" CREATED="1450807128932" MODIFIED="1450807128932"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
 <font NAME="SansSerif" BOLD="true"/>
@@ -8650,8 +8697,8 @@
 <node TEXT="# -*- coding: utf-8 -*-" ID="ID_913719053" CREATED="1446554266213" MODIFIED="1446554266213"/>
 <node TEXT="&apos;&apos;&apos;lisnp_docopt" ID="ID_1209194388" CREATED="1446554266216" MODIFIED="1446554266216"/>
 <node TEXT="Usage:" ID="ID_272911355" CREATED="1446554266217" MODIFIED="1446554266217">
-<node TEXT="lisnp_docopt ship new &lt;name&gt;..." ID="ID_1830892319" CREATED="1446554266223" MODIFIED="1446554266223"/>
-<node TEXT="lisnp_docopt ship &lt;name&gt; move &lt;x&gt; &lt;y&gt; [--speed=&lt;kn&gt;]" ID="ID_327626687" CREATED="1446554266223" MODIFIED="1446554266223"/>
+<node TEXT="lisnp_docopt ship new &lt;file_name&gt;..." ID="ID_1830892319" CREATED="1446554266223" MODIFIED="1450806687214"/>
+<node TEXT="lisnp_docopt ship &lt;file_name&gt; move &lt;x&gt; &lt;y&gt; [--speed=&lt;kn&gt;]" ID="ID_327626687" CREATED="1446554266223" MODIFIED="1450806687214"/>
 <node TEXT="lisnp_docopt ship shoot &lt;x&gt; &lt;y&gt;" ID="ID_125615307" CREATED="1446554266223" MODIFIED="1446554266223"/>
 <node TEXT="lisnp_docopt mine (set|remove) &lt;x&gt; &lt;y&gt; [--moored|--drifting]" ID="ID_1813463665" CREATED="1446554266223" MODIFIED="1446554266223"/>
 <node TEXT="lisnp_docopt -h | --help" ID="ID_686497831" CREATED="1446554266223" MODIFIED="1446554266223"/>
