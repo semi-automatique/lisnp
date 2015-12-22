@@ -46,6 +46,7 @@ def mm2yaml(mm_file_name):
     else:
         print("Either file is missing or is not readable")
 def yaml2mm(yaml_file_name):
+    ''' There is no guarantee for the moment that a mind map convert to YAML and back to mind map format will have all attributes at the same position in the new mind map. '''
     print("linsp yaml2mm was called.")
     if os.path.isfile(yaml_file_name) and os.access(yaml_file_name, os.R_OK):
         print("File exists and is readable")

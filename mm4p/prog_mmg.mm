@@ -227,6 +227,7 @@
 </node>
 <node TEXT="def yaml2mm(yaml_file_name):" ID="ID_751318095" CREATED="1446554266227" MODIFIED="1450805735527">
 <font BOLD="true"/>
+<node TEXT="&apos;&apos;&apos; There is no guarantee for the moment that a mind map convert to YAML and back to mind map format will have all attributes at the same position in the new mind map. &apos;&apos;&apos;" ID="ID_1634255184" CREATED="1450811615540" MODIFIED="1450811632477"/>
 <node TEXT="print(&quot;linsp yaml2mm was called.&quot;)" ID="ID_1366469903" CREATED="1448923481895" MODIFIED="1450805747542"/>
 <node TEXT="if os.path.isfile(yaml_file_name) and os.access(yaml_file_name, os.R_OK):" ID="ID_577998718" CREATED="1448923481894" MODIFIED="1450805769111">
 <node TEXT="print(&quot;File exists and is readable&quot;)" ID="ID_1641008403" CREATED="1448923481895" MODIFIED="1448927791246"/>
@@ -8562,25 +8563,21 @@
 <node TEXT=": The file do not exist." ID="ID_763470474" CREATED="1446556805130" MODIFIED="1448922812448">
 <node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/nofile.mm" ID="ID_1849088906" CREATED="1446556595282" MODIFIED="1448927817973"/>
 </node>
-<node TEXT=": Minimal tests for mm2yaml." ID="ID_453244050" CREATED="1450807128931" MODIFIED="1450807128931">
-<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_1228611404" CREATED="1450807128931" MODIFIED="1450807128931"/>
-<node TEXT=": python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm" ID="ID_1596658835" CREATED="1450807128931" MODIFIED="1450810358156">
-<font BOLD="true"/>
+<node TEXT=": Minimal tests for mm2yaml." ID="ID_426032636" CREATED="1450811677444" MODIFIED="1450811677444">
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/empty.mm" ID="ID_1211020163" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/root-node-only.mm" ID="ID_1827142261" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm" ID="ID_1371792232" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm" ID="ID_1992921104" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm" ID="ID_126585597" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm" ID="ID_233024886" CREATED="1450811677444" MODIFIED="1450811677444"/>
 </node>
-<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/Testmap-for-automated-Tests.mm" ID="ID_1046833720" CREATED="1450807128931" MODIFIED="1450807128931"/>
-<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/ListsTest.mm" ID="ID_1272252334" CREATED="1450807128931" MODIFIED="1450807128931"/>
-<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/RichtextTests.mm" ID="ID_1814076560" CREATED="1450807128931" MODIFIED="1450807128931"/>
-<node TEXT=":    python ./lisnp/lisnp.py mm2yaml ./tests/mindmap/StructuredMapTest.mm" ID="ID_1155021550" CREATED="1450807128931" MODIFIED="1450807128931"/>
-</node>
-<node TEXT=": Minimal tests for yaml2mm." ID="ID_1447709644" CREATED="1450807128931" MODIFIED="1450807128931">
-<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/empty.yml" ID="ID_1853204571" CREATED="1450807128932" MODIFIED="1450807128932"/>
-<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/root-node-only.yml" ID="ID_1438017645" CREATED="1450807128932" MODIFIED="1450810362821">
-<font BOLD="true"/>
-</node>
-<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/Testmap-for-automated-Tests.yml" ID="ID_1389022845" CREATED="1450807128932" MODIFIED="1450807128932"/>
-<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/ListsTest.yml" ID="ID_861290024" CREATED="1450807128932" MODIFIED="1450807128932"/>
-<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/RichtextTests.yml" ID="ID_1254819666" CREATED="1450807128932" MODIFIED="1450807128932"/>
-<node TEXT=":   python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/StructuredMapTest.yml" ID="ID_1577130095" CREATED="1450807128932" MODIFIED="1450807128932"/>
+<node TEXT=": Minimal tests for yaml2mm." ID="ID_132787253" CREATED="1450811677444" MODIFIED="1450811677444">
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/empty.yml" ID="ID_1943881409" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/root-node-only.yml" ID="ID_1488122607" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/Testmap-for-automated-Tests.yml" ID="ID_1215759111" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/ListsTest.yml" ID="ID_1690728446" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/RichtextTests.yml" ID="ID_116735401" CREATED="1450811677444" MODIFIED="1450811677444"/>
+<node TEXT="python ./lisnp/lisnp.py yaml2mm ./tests/mindmap/StructuredMapTest.yml" ID="ID_699763658" CREATED="1450811677444" MODIFIED="1450811677444"/>
 </node>
 <node TEXT="mmg write - mmg_stop.txt" ID="ID_1591317244" CREATED="1444928448483" MODIFIED="1444946377394" LINK="./mmg_stop.txt">
 <font NAME="SansSerif" BOLD="true"/>
